@@ -1,0 +1,368 @@
+/*
+Theme Name: WordPress Educational Platform
+Theme URI: http://example.com
+Author: Your Name
+Author URI: http://example.com
+Description: A clean and educational theme for promoting an educational platform with interactive features.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: educational, clean, responsive
+*/
+
+/* Variáveis de cores */
+:root {
+    --primary-dark: #2E2D60;    /* Azul escuro para elementos principais */
+    --primary: #6053B4;         /* Roxo médio para destaques */
+    --secondary: #6F5CCB;       /* Roxo claro para hover e elementos secundários */
+    --white: #FFFFFF;           /* Branco para textos e fundos */
+}
+
+/* Remove o espaçamento superior */
+html {
+    margin-top: 0 !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FCFCFC;
+    color: #363564;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajusta o header quando a barra admin do WordPress está presente */
+.admin-bar header {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar header {
+        top: 46px;
+    }
+}
+
+/* Header */
+header {
+    background: var(--primary-dark);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none !important; /* Remove a sombra da caixa também do elemento header */
+}
+
+.site-branding {
+    flex: 0 0 auto;
+}
+
+.site-title {
+    color: var(--white);
+}
+
+.site-description {
+    color: var(--white);
+    opacity: 0.9;
+}
+
+.header-nav {
+    flex: 0 0 auto;
+}
+
+/* Menu de navegação */
+.header-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.header-menu li {
+    margin: 0;
+}
+
+.header-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.header-menu a:hover {
+    color: #6F5CCB !important;
+}
+
+.header-menu a[href*="compra"]:hover {
+    background: #7D65E1;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #363564;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #7D65E1;
+    color: #FFFFFF;
+}
+
+.section-hero {
+    background-color: #7D65E1;
+    color: #FFFFFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-features {
+    padding: 40px 20px;
+    background-color: #FCFCFC;
+}
+
+.section-footer {
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+/* Header e Hero Section Background */
+.header-hero-wrapper {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 115vh; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adicione este pseudo-elemento para criar a camada de opacidade */
+.header-hero-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.3); /* Aqui define a opacidade de 35% */
+    z-index: 1;
+}
+
+/* Ajuste o z-index dos elementos para ficarem acima da camada de opacidade */
+.site-header {
+    position: relative;
+    z-index: 3;
+    background: transparent !important;
+    text-shadow: none !important;
+    box-shadow: none !important; /* Remove a sombra da caixa */
+}
+
+.hero-section {
+    position: relative;
+    z-index: 2; /* Aumentado para ficar acima da camada de opacidade */
+}
+
+/* Ajustes do Header e Navegação */
+.main-navigation {
+    display: block;
+    width: 100%;
+    background: transparent !important;
+}
+
+.main-navigation .menu-primary-container {
+    background: transparent !important;
+}
+
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+}
+
+.main-navigation ul li {
+    position: relative;
+    margin: 0 10px;
+    background: transparent !important;
+}
+
+.main-navigation ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff; /* Ajuste a cor do texto do menu para contrastar com a imagem */
+    font-weight: 500; /* Deixa o texto mais legível */
+    text-shadow: none !important; /* Força remoção de sombra nos links */
+    padding: 10px;
+}
+
+/* Estilo para o item Jogos no menu */
+.main-navigation ul li a[href*="jogos"] {
+    color: #fff;
+    font-weight: 500;
+}
+
+.main-navigation ul li a[href*="jogos"]:hover {
+    color: #f8f8f8;
+}
+
+/* Hover estados */
+.main-navigation ul li:hover > a,
+.main-navigation ul li.current-menu-item > a {
+    color: #f8f8f8; /* Cor quando hover ou item ativo */
+    text-shadow: none !important; /* Força remoção de sombra no hover */
+}
+
+/* Submenu ajustes */
+.main-navigation ul ul {
+    background: rgba(0,0,0,0.8) !important; /* Fundo semi-transparente para submenus */
+}
+
+.main-navigation ul ul li a {
+    color: #fff;
+}
+
+/* Conteúdo principal */
+.site-content {
+    background: var(--white);
+    padding: 2rem 5%;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-dark);
+}
+
+/* Botões */
+.button, 
+.wp-block-button__link {
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.wp-block-button__link:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-dark);
+    color: var(--white);
+    padding: 3rem 5%;
+}
+
+.footer-widgets {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-widgets div {
+    width: 22%;
+}
+
+/* Centralização do Footer */
+.site-footer {
+    text-align: center;
+}
+
+.site-footer .widget-area,
+.site-footer .widget {
+    text-align: center;
+}
+
+.site-footer .menu,
+.site-footer .menu-footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-footer .menu li {
+    float: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.site-footer .widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.site-footer .widget-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cards ou boxes de conteúdo */
+.content-box {
+    background: var(--white);
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Gradientes para seções especiais */
+.highlight-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    color: var(--white);
+    padding: 4rem 5%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .site-branding {
+        margin-bottom: 1rem;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-widgets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-widgets div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

@@ -16,6 +16,7 @@ Tags: educational, clean, responsive
     --primary: #6053B4;         /* Roxo médio para destaques */
     --secondary: #6F5CCB;       /* Roxo claro para hover e elementos secundários */
     --white: #FFFFFF;           /* Branco para textos e fundos */
+    --font-primary: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Remove o espaçamento superior */
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-primary);
     background-color: #FCFCFC;
     color: #363564;
     margin: 0;
@@ -167,67 +168,90 @@ nav a:hover {
 
 .hero-section {
     position: relative;
-    z-index: 2; /* Aumentado para ficar acima da camada de opacidade */
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start; /* Altera para flex-start ao invés de center */
+    align-items: center;
+    padding: 4rem 1rem;
 }
 
-/* Ajustes do Header e Navegação */
+.hero-content-box {
+    background-color: rgba(96, 83, 180, 0.9);
+    border-radius: 50px;
+    padding: 2rem;
+    margin: 2rem;
+    margin-right: auto;
+    max-width: 600px; /* Reduzindo a largura máxima */
+    width: 50%; /* Ajustando a largura para 50% */
+    position: relative;
+    z-index: 2;
+    margin-left: 10%; /* Adiciona margem à esquerda */
+}
+
+.hero-content-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+.hero-content-box p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.hero-content-box .button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Estilos do Menu Principal Centralizado */
 .main-navigation {
-    display: block;
     width: 100%;
+    display: flex;
+    justify-content: center;
     background: transparent !important;
+    font-family: var(--font-primary);
+    font-weight: 500;
 }
 
 .main-navigation .menu-primary-container {
-    background: transparent !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .main-navigation ul {
     display: flex;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    background: transparent !important;
+    gap: 2rem; /* Espaçamento entre itens */
 }
 
 .main-navigation ul li {
     position: relative;
-    margin: 0 10px;
-    background: transparent !important;
 }
 
 .main-navigation ul li a {
     display: block;
     text-decoration: none;
-    color: #fff; /* Ajuste a cor do texto do menu para contrastar com a imagem */
-    font-weight: 500; /* Deixa o texto mais legível */
-    text-shadow: none !important; /* Força remoção de sombra nos links */
-    padding: 10px;
-}
-
-/* Estilo para o item Jogos no menu */
-.main-navigation ul li a[href*="jogos"] {
     color: #fff;
+    padding: 10px;
     font-weight: 500;
 }
 
-.main-navigation ul li a[href*="jogos"]:hover {
+.main-navigation ul li a:hover {
     color: #f8f8f8;
-}
-
-/* Hover estados */
-.main-navigation ul li:hover > a,
-.main-navigation ul li.current-menu-item > a {
-    color: #f8f8f8; /* Cor quando hover ou item ativo */
-    text-shadow: none !important; /* Força remoção de sombra no hover */
-}
-
-/* Submenu ajustes */
-.main-navigation ul ul {
-    background: rgba(0,0,0,0.8) !important; /* Fundo semi-transparente para submenus */
-}
-
-.main-navigation ul ul li a {
-    color: #fff;
 }
 
 /* Conteúdo principal */
@@ -239,6 +263,7 @@ nav a:hover {
 /* Títulos */
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-dark);
+    font-family: var(--font-primary);
 }
 
 /* Botões */
@@ -278,11 +303,17 @@ footer {
 
 .footer-widgets {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 2rem 0;
 }
 
 .footer-widgets div {
-    width: 22%;
+    width: auto;
+    min-width: 200px;
+    margin: 0;
+    text-align: center;
 }
 
 /* Centralização do Footer */
@@ -339,6 +370,271 @@ footer {
     padding: 4rem 5%;
 }
 
+/* Features Section */
+.features-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.features-title {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+.features-subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-dark);
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-text {
+    margin-bottom: 1.5rem;
+}
+
+.feature-text h3 {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 600;
+}
+
+.feature-text p {
+    color: var(--primary-dark);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.feature-image {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.simulados-img {
+    background-image: url('assets/images/simulados.svg');
+}
+
+.quizzes-img {
+    background-image: url('assets/images/quizzes.svg');
+}
+
+.flashcards-img {
+    background-image: url('assets/images/flashcards.svg');
+}
+
+.desempenho-img {
+    background-image: url('assets/images/desempenho.svg');
+}
+
+/* Seção de Preços */
+.pricing-section {
+    padding: 4rem 5%;
+    background-color: var(--primary-dark);
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    min-height: 700px; /* Aumentado para acomodar imagem maior */
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-header {
+    margin-bottom: 2rem;
+}
+
+.pricing-header h3 {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 600;
+}
+
+.price {
+    margin-bottom: 1.5rem;
+}
+
+.price .amount {
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.price .period {
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+    opacity: 0.7;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.5rem 0; /* Reduzido para dar mais espaço à imagem */
+    text-align: center;
+}
+
+.pricing-features li {
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+}
+
+.pricing-image {
+    width: 100%;
+    height: 350px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-top: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos específicos para cada imagem */
+.astronaut-img {
+    background-image: url('assets/images/astronaut.svg');
+    height: 350px;
+    margin-bottom: 30px;
+    transform: scale(1.30);
+}
+
+.planet-img {
+    background-image: url('assets/images/planet.svg');
+    height: 350px;
+    margin-bottom: 30px;
+    transform: scale(1.30);
+}
+
+.rocket-img {
+    background-image: url('assets/images/rocket.svg');
+    height: 350px;
+    margin-bottom: 30px;
+    transform: scale(1.30);;
+}
+
+.galaxy-img {
+    background-image: url('assets/images/galaxy.svg');
+    height: 350px;
+    margin-bottom: 30px;
+    transform: scale(1.30);
+}
+
+/* Efeito hover para todas as imagens 
+.pricing-card:hover .pricing-image {
+    transform: scale(1.2);
+}
+
+/* Botão de voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(100px);
+    z-index: 999;
+    padding: 12px;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+}
+
+.back-to-top svg {
+    transform: rotate(-45deg);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     header {
@@ -364,5 +660,9 @@ footer {
     .footer-widgets div {
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
     }
 }

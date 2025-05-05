@@ -39,9 +39,16 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; <?php echo date("Y"); ?> Seu Nome ou Empresa. Todos os direitos reservados.</p>
+        <p>&copy; <?php echo date("Y"); ?> Exitus Educacional. Todos os direitos reservados.</p>
     </div>
 </footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L8 11H16L12 2Z" fill="currentColor"/>
+        <path d="M12 22V8" stroke="currentColor" stroke-width="2"/>
+    </svg>
+</button>
 
 <style>
     footer {

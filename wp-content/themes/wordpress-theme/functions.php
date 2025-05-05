@@ -10,8 +10,7 @@ add_theme_support('page-templates');
 // Registra os menus
 register_nav_menus(
     array(
-        'primary' => __('Menu Principal', 'wordpress-theme'),
-        // ...existing code...
+        'primary' => __('Menu Principal', 'wordpress-theme')
     )
 );
 
@@ -21,6 +20,11 @@ function theme_enqueue_styles_scripts() {
     wp_enqueue_script('main-script', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles_scripts');
+
+function add_scroll_to_top_script() {
+    wp_enqueue_script('scroll-to-top', get_template_directory_uri() . '/js/scroll-to-top.js', array(), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'add_scroll_to_top_script');
 
 // Inclui arquivos de funções adicionais
 require get_template_directory() . '/inc/theme-functions.php';

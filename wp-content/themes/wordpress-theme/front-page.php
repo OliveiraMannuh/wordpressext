@@ -84,41 +84,6 @@
     </div>
 </section>
 
-<section class="planning-section">
-    <div class="planning-container">
-        <div class="planning-content">
-            <h2>Planejamento <span>Semanal</span></h2>
-            <p class="planning-subtitle">Lembretes inteligentes para você estudar os conteúdos escolhidos e superar suas dificuldades sem perder o ritmo! 📚✨</p>
-            
-            <div class="planning-features">
-                <div class="planning-feature-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/revision-icon.svg" alt="Revisão">
-                    <span>Revisão espaçada</span>
-                </div>
-                
-                <div class="planning-feature-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reminder-icon.svg" alt="Lembretes">
-                    <span>Lembretes diários</span>
-                </div>
-                
-                <div class="planning-feature-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/calendar-icon.svg" alt="Agendamento">
-                    <span>Agendamento personalizado</span>
-                </div>
-                
-                <div class="planning-feature-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/simulation-icon.svg" alt="Simulados">
-                    <span>Simulados programados</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="planning-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/planning-astronaut.svg" alt="Astronauta planejando">
-        </div>
-    </div>
-</section>
-
 <section class="spaced-repetition-section">
     <div class="spaced-repetition-container">
         <div class="spaced-repetition-header">
@@ -155,6 +120,66 @@
                     <div class="benefit-image benefit-4"></div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="spaced-study-section">
+    <div class="spaced-study-container">
+        <div class="spaced-study-content">
+            <h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>
+            
+            <p class="study-description">
+                Um estudo da Universidade Federal de Uberlândia (UFU) revela que a repetição 
+                espaçada é uma das estratégias mais eficazes para aprender e memorizar 
+                conteúdos. Entenda como essa técnica pode transformar seus estudos.
+            </p>
+
+            <blockquote class="study-quote">
+                <p>"[...] a repetição espaçada pode ser uma poderosa técnica de aprendizagem e memorização."</p>
+                <cite>(CHAVES et al., 2020 - UFU)</cite>
+            </blockquote>
+        </div>
+        
+        <div class="spaced-study-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-reading.svg" 
+                 alt="Astronauta estudando">
+        </div>
+    </div>
+</section>
+
+
+<section class="planning-section">
+    <div class="planning-container">
+        <div class="planning-content">
+            <h2>Planejamento <span>Semanal</span></h2>
+            <p class="planning-subtitle">Lembretes inteligentes para você estudar os conteúdos escolhidos e superar suas dificuldades sem perder o ritmo! 📚✨</p>
+            
+            <div class="planning-features">
+                <div class="planning-feature-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/revision-icon.svg" alt="Revisão">
+                    <span>Revisão espaçada</span>
+                </div>
+                
+                <div class="planning-feature-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reminder-icon.svg" alt="Lembretes">
+                    <span>Lembretes diários</span>
+                </div>
+                
+                <div class="planning-feature-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/calendar-icon.svg" alt="Agendamento">
+                    <span>Agendamento personalizado</span>
+                </div>
+                
+                <div class="planning-feature-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/simulation-icon.svg" alt="Simulados">
+                    <span>Simulados programados</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="planning-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/planning-astronaut.svg" alt="Astronauta planejando">
         </div>
     </div>
 </section>
@@ -240,5 +265,7 @@
         </div>
     </div>
 </section>
+
+
 
 <?php get_footer(); ?>

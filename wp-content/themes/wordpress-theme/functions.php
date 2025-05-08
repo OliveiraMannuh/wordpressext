@@ -63,4 +63,36 @@ function aplicar_header_hero_background() {
     }
 }
 add_action('wp_head', 'aplicar_header_hero_background');
+
+function wordpress_theme_custom_header_setup() {
+    add_theme_support('custom-header', array(
+        'default-image'          => '',
+        'random-default'         => false,
+        'width'                  => 1920,
+        'height'                 => 1080,
+        'flex-height'            => true,
+        'flex-width'            => true,
+        'default-text-color'     => 'fff',
+        'header-text'            => true,
+        'uploads'               => true,
+        'wp-head-callback'       => 'wordpress_theme_header_style',
+    ));
+}
+add_action('after_setup_theme', 'wordpress_theme_custom_header_setup');
+
+function wordpress_theme_header_style() {
+    $header_image = get_header_image();
+    if (!empty($header_image)) {
+        ?>
+        <style type="text/css">
+            .header-hero-wrapper {
+                background-image: url('<?php echo esc_url($header_image); ?>');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <?php
+    }
+}
 ?>

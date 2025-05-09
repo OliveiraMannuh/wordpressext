@@ -28,14 +28,14 @@
                 <div class="feature-image flashcards-img"></div>
             </div>
         </div>
+    </div>
 
-        <div class="feature-card">
-            <div class="feature-content">
-                <h3>Desempenho</h3>
-                <p>Monitore sua evolução com relatórios detalhados que mostram seu progresso!</p>
-                <div class="feature-image desempenho-img"></div>
-            </div>
+    <div class="performance-card">
+        <div class="performance-content">
+            <h3>Desempenho</h3>
+            <p>Monitore sua evolução com relatórios de desempenho que mostram o seu progresso! 📊✨</p>
         </div>
+        <div class="performance-image"></div>
     </div>
 </section>
 
@@ -75,10 +75,10 @@
         <div class="share-options">
             <h3>Compartilhe:</h3>
             <ul class="share-list">
-                <li><a href="#">Flashcards</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="#">Simuados</a></li>
+                <li><a href="#">Materiais</a></li>
                 <li><a href="#">Decks</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Simulados</a></li>
             </ul>
         </div>
     </div>
@@ -93,31 +93,115 @@
         </div>
 
         <div class="benefits-grid">
+            <!-- Carta 1 -->
             <div class="benefit-card">
-                <div class="benefit-content">
-                    <h4>Melhora da compreensão de conceitos complexos</h4>
-                    <div class="benefit-image benefit-1"></div>
+                <div class="card-header">
+                    <div class="card-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/memoria.svg" alt="Memória de Longo Prazo">
+                    </div>
+                    <h3>Memória de Longo Prazo</h3>
+                </div>
+                <div class="card-attributes">
+                    <div class="attribute">
+                        <span>Retenção</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Capacidade de Fixação</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Profundidade Cognitiva</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Recuperação Espontânea</span>
+                        <div class="link-icon"></div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Carta 2 -->
             <div class="benefit-card">
-                <div class="benefit-content">
-                    <h4>Aumenta a retenção de informações por muito mais tempo</h4>
-                    <div class="benefit-image benefit-2"></div>
+                <div class="card-header">
+                    <div class="card-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eficiencia.svg" alt="Eficiência no Estudo">
+                    </div>
+                    <h3>Eficiência no Estudo</h3>
+                </div>
+                <div class="card-attributes">
+                    <div class="attribute">
+                        <span>Aprendizado Direcionado</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Otimização do Tempo</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Foco Aprimorado</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Redução da Procrastinação</span>
+                        <div class="link-icon"></div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Carta 3 -->
             <div class="benefit-card">
-                <div class="benefit-content">
-                    <h4>Facilita a identificação de lacunas no conhecimento</h4>
-                    <div class="benefit-image benefit-3"></div>
+                <div class="card-header">
+                    <div class="card-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/compreensao.svg" alt="Compreensão Aprimorada">
+                    </div>
+                    <h3>Compreensão Aprimorada</h3>
+                </div>
+                <div class="card-attributes">
+                    <div class="attribute">
+                        <span>Conexão de Conceitos</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Revisão Ativa</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Identificação de Lacunas</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Pensamento Crítico</span>
+                        <div class="link-icon"></div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Carta 4 -->
             <div class="benefit-card">
-                <div class="benefit-content">
-                    <h4>Ajuda na aprendizagem profunda</h4>
-                    <div class="benefit-image benefit-4"></div>
+                <div class="card-header">
+                    <div class="card-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/motivacao.svg" alt="Aumento da Motivação">
+                    </div>
+                    <h3>Aumento da Motivação</h3>
+                </div>
+                <div class="card-attributes">
+                    <div class="attribute">
+                        <span>Aprendizado Proativo</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Redução da Frustração</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Maior Interesse no Assunto</span>
+                        <div class="link-icon"></div>
+                    </div>
+                    <div class="attribute">
+                        <span>Sensação de Realização</span>
+                        <div class="link-icon"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,14 +214,14 @@
             <h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>
             
             <p class="study-description">
-                Um estudo da Universidade Federal de Uberlândia (UFU) revela que a repetição 
-                espaçada é uma das estratégias mais eficazes para aprender e memorizar 
-                conteúdos. Entenda como essa técnica pode transformar seus estudos.
+            Um estudo da Universidade Federal de São Carlos (UFSCar) revela que a 
+            repetição espaçada é uma técnica fundamental para combater o esquecimento e 
+            promover a retenção de conhecimento a longo prazo.
             </p>
 
             <blockquote class="study-quote">
-                <p>"[...] a repetição espaçada pode ser uma poderosa técnica de aprendizagem e memorização."</p>
-                <cite>(CHAVES et al., 2020 - UFU)</cite>
+                <p>"A repetição espaçada (spaced repetition – SR) é uma técnica de estudos baseada em evidências científicas que visa memorização e manutenção a longo prazo das informações aprendidas."</p>
+                <cite>(NASCIMENTO, 2023 - UFSCar)</cite>
             </blockquote>
         </div>
         
@@ -198,7 +282,7 @@
                 </div>
             </div>
             <ul class="pricing-features">
-                <li>Flashcards ilimitados</li>
+                <li>Criar até 10 materiais</li>
                 <li>10 simulados por dia</li>
                 <li>10 quizzes por dia</li>
                 <li>10 decks</li>
@@ -217,7 +301,7 @@
                 </div>
             </div>
             <ul class="pricing-features">
-                <li>Flashcards ilimitados</li>
+                <li>Criar até 30 materiais</li>
                 <li>20 simulados por dia</li>
                 <li>20 quizzes por dia</li>
                 <li>20 decks</li>
@@ -236,7 +320,7 @@
                 </div>
             </div>
             <ul class="pricing-features">
-                <li>Flashcards ilimitados</li>
+                <li>Criar até 50 materiais</li>
                 <li>Simulados ilimitados</li>
                 <li>50 Quizzes por dia</li>
                 <li>50 decks</li>
@@ -255,7 +339,7 @@
                 </div>
             </div>
             <ul class="pricing-features">
-                <li>Flashcards ilimitados</li>
+                <li>Materiais ilimitados</li>
                 <li>Simulados ilimitados</li>
                 <li>Quizzes ilimitados</li>
                 <li>Decks ilimitados</li>

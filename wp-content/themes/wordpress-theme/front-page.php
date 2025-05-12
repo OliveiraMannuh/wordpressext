@@ -63,9 +63,10 @@
 </section>
 
 <section class="share-section">
+    <h2>Compartilhamento de Jogos e Decks</h2>
     <div class="share-container">
         <div class="share-content">
-            <h2>Compartilhamento de Jogos e Decks</h2>
+            <!--<h2>Compartilhamento de Jogos e Decks</h2>-->
             <p>Curtiu um deck ou criou um jogo irado? Compartilha com a galera e ajuda todo mundo a mandar bem nesse assunto também!</p>
             
             <div class="share-image">

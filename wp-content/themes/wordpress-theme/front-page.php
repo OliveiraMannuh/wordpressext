@@ -31,11 +31,13 @@
     </div>
 
     <div class="performance-card">
+        <h3>Desempenho</h3>
         <div class="performance-content">
-            <h3>Desempenho</h3>
             <p>Monitore sua evolução com relatórios de desempenho que mostram o seu progresso! 📊✨</p>
         </div>
-        <div class="performance-image"></div>
+        <div class="performance-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/desempenho.svg" alt="Ícone de Desempenho">
+        </div>
     </div>
 </section>
 

@@ -75,13 +75,28 @@
     }
     .footer-column ul li a {
         color: #FCFCFC;
-        text-decoration: none;
+        text-decoration: none !important;
     }
     .footer-column ul li a:hover {
         text-decoration: underline;
+        color: #7D65E1;
     }
     .footer-bottom {
         text-align: center;
         margin-top: 20px;
+    }
+
+    /*Responsividade*/
+    @media (max-width: 768px) {
+        .footer-widgets {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-column {
+            text-align: center;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+        }
     }
 </style>

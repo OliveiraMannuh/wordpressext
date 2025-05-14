@@ -14,7 +14,7 @@
             <a href="<?php echo home_url(); ?>" style="display: block;">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoexitus.png" 
                      alt="<?php bloginfo('name'); ?>"
-                     style="height: 70px; width: auto;">
+                     style="height: 80px; width: auto;">
             </a>
         </div>
         

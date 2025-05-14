@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <section class="features-section">
-    <h2 class="features-title">Bora Praticar?</h2>
-    <p class="features-subtitle">Desafie seu cérebro de um jeito vibrante! Resolva quizzes, bata seus recordes em simulados e vire mestre nos flashcards com a adrenalina de um jogo! 🎮</p>
+    <h2 class="features-title">Diversão Que Ensina</h2>
+    <p class="features-subtitle">Desafie seu cérebro de um jeito viciante! <br>Resolva quizzes, bata seus recordes em simulados e vire mestre nos flashcards com a adrenalina de um jogo! 🎮</p>
     
     <div class="features-grid">
         <div class="feature-card">
@@ -45,7 +45,7 @@
     <div class="study-choice-container">
         <div class="study-choice-content">
             <h2>Escolha Como <span>Estudar</span></h2>
-            <p>No Exitus Educacional você pode escolher qualquer jogo para testar os seus conhecimentos sem pagar nada.</p>
+            <p>No Exitus Educacional você pode escolher qualquer jogo para testar os seus conhecimentos sem pagar nada. 📚✨</p>
             <a href="#" class="study-button">EXPERIMENTE GRÁTIS!</a>
         </div>
         <div class="study-choice-images">
@@ -212,9 +212,10 @@
 </section>
 
 <section class="spaced-study-section">
+    <h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>
     <div class="spaced-study-container">
         <div class="spaced-study-content">
-            <h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>
+        <!--<h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>-->
             
             <p class="study-description">
             Um estudo da Universidade Federal de São Carlos (UFSCar) revela que a 
@@ -273,6 +274,20 @@
 
 <section class="pricing-section">
     <h2 class="pricing-title">Planos</h2>
+<!--svg para decoração abaixo dos planos -->
+    <svg class="decoration" width="120" height="20" viewBox="0 0 120 20">
+            <!-- Linha cinza do meio -->
+            <!-- x1,y1: Ponto inicial da linha nas coordenadas
+                x2,y2: Ponto final da linha nas coordenadas
+                stroke-width: Espessura da linha 
+            <line x1="30" y1="10" x2="90" y2="10" stroke="#FFA500" stroke-width="3" />-->
+            
+            <!-- Linha curva amarela à esquerda -->
+            <path d="M20 10 Q 35 0, 60 10" stroke="#FFA500" stroke-width="3" fill="none" />
+            
+            <!-- Linha curva amarela à direita -->
+            <path d="M60 10 Q 85 20, 100 10" stroke="#FFA500" stroke-width="3" fill="none" />
+        </svg>
     
     <div class="pricing-grid">
         <!-- Plano Astronauta -->

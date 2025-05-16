@@ -234,6 +234,10 @@ nav a:hover {
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
+    color: var(--white);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
 /*Responsividade*/
@@ -326,6 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 .button:hover,
 .wp-block-button__link:hover {
     background: var(--primary-dark);
+    color: var(--white);
     transform: translateY(-2px);
 }
 
@@ -594,7 +599,11 @@ footer {
 /*decoração abaixo do planos*/
 .decoration {
     display: block;
-    margin: -40px auto 0;
+    /*margin: -50px auto 0;*/
+    margin-top: -45px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
 }
 
 .pricing-grid {
@@ -709,7 +718,7 @@ footer {
 /* Planejamento */
 .planning-section {
     background-color: var(--white);
-    padding: 5rem 5%;
+    padding: 10rem 5%;
     overflow: hidden;
 }
 
@@ -792,14 +801,31 @@ footer {
 }
 
 .planning-image {
-    flex: 1;
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding: 2rem;
+}
+
+.planning-image::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(125, 101, 225, 0.1);
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .planning-image img {
-    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 350px;
     height: auto;
+    left: 30px;
 }
 
 .planning-image img:hover {
@@ -818,6 +844,60 @@ footer {
 
     .planning-image {
         order: -1;
+    }
+}
+
+/*Imagens ao redor do círculo*/
+
+.icone-notificacao {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.calendario-estelar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.icone-notificacao:first-child {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    z-index: 3;
+    width: 120px;
+    height: 120px;
+    transform: rotate(30deg);/*atualizar*/
+}
+
+.calendario-estelar:last-child {
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .icone-notificacao:first-child {
+        top: -15px;
+        left: 30px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .calendario-estelar:last-child {
+        bottom: -15px;
+        right: 30px;
+        width: 90px;
+        height: 90px;
     }
 }
 
@@ -866,7 +946,7 @@ footer {
     background: #7D65E1;
     color: white;
     padding: 1rem 2rem;
-    border-radius: 50px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.3s ease, background 0.3s ease;
@@ -874,7 +954,7 @@ footer {
 
 .study-button:hover {
     transform: translateY(-3px);
-    background: #6753b4;
+    background: var(--primary-dark); /*background: #6753b4;*/
     color: var(--white);
 }
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="features-section">
+<section class="features-section" id="jogos">
     <h2 class="features-title">Diversão Que Ensina</h2>
     <p class="features-subtitle">Desafie seu cérebro de um jeito viciante! <br>Resolva quizzes, bata seus recordes em simulados e vire mestre nos flashcards com a adrenalina de um jogo! 🎮</p>
     
@@ -8,7 +8,7 @@
         <div class="feature-card">
             <div class="feature-content">
                 <h3>Simulados</h3>
-                <p>Transforme seus materiais em simulados e estude no seu próprio ritmo!</p>
+                <p>Transforme seus materiais em simulados e estude no seu próprio ritmo! ✨📚</p>
                 <div class="feature-image simulados-img"></div>
             </div>
         </div>
@@ -16,7 +16,7 @@
         <div class="feature-card">
             <div class="feature-content">
                 <h3>Quizzes</h3>
-                <p>Teste seu conhecimento com quizzes incríveis e descubra se você realmente aprendeu!</p>
+                <p>Teste seu conhecimento com quizzes incríveis e descubra se você realmente aprendeu! 🧠🎯</p>
                 <div class="feature-image quizzes-img"></div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div class="feature-card">
             <div class="feature-content">
                 <h3>Flashcards</h3>
-                <p>Desafie sua mente com flashcards gamificados e domine qualquer assunto!</p>
+                <p>Desafie sua mente com flashcards gamificados e domine qualquer assunto! 🚀🃏</p>
                 <div class="feature-image flashcards-img"></div>
             </div>
         </div>
@@ -239,6 +239,12 @@
 
 <section class="planning-section">
     <div class="planning-container">
+    <div class="planning-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icone-notificacao.svg" alt="Ícone de notificação" class="icone-notificacao">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/planning-astronaut.svg" alt="Astronauta planejando" class="imagem-plan-principal">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/calendario-estelar.svg" alt="Calendário Estelar" class="calendario-estelar">
+    </div>
+
         <div class="planning-content">
             <h2>Planejamento <span>Semanal</span></h2>
             <p class="planning-subtitle">Lembretes inteligentes para você estudar os conteúdos escolhidos e superar suas dificuldades sem perder o ritmo! 📚✨</p>
@@ -266,9 +272,7 @@
             </div>
         </div>
         
-        <div class="planning-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/planning-astronaut.svg" alt="Astronauta planejando">
-        </div>
+
     </div>
 </section>
 

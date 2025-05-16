@@ -14,7 +14,7 @@
             <a href="<?php echo home_url(); ?>" style="display: block;">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoexitus.png" 
                      alt="<?php bloginfo('name'); ?>"
-                     style="height: 80px; width: auto;">
+                     style="height: 90px; width: auto;">
             </a>
         </div>
         
@@ -34,8 +34,8 @@
         <div class="hero-content-box">
             <h1>Exitus Educacional</h1>
             <p>Transformando aprendizado em diversão</p>
-            <p>Domine qualquer matéria com quizzes, simulados, flashcards gamificados e acompanhamento das métricas de evolução para turbinar seu aprendizado, tudo com a vibe de um jogo!</p>
-            <a href="#" class="button">ACESSO ESTELAR GRATUITO</a>
+            <p>Domine qualquer matéria com quizzes, simulados, flashcards gamificados e acompanhamento das métricas de evolução para turbinar seu aprendizado, tudo com a vibe de um jogo! 🎮</p>
+            <a href="#" class="button">ACESSO ESTELAR GRATUITO 🚀</a>
         </div>
     </div>
 </div>

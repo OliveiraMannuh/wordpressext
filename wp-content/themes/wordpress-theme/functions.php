@@ -95,4 +95,14 @@ function wordpress_theme_header_style() {
         <?php
     }
 }
+/*Caminho menu principal jogos*/
+function modify_menu_item_url($items) {
+    foreach ($items as $item) {
+        if ($item->ID == 24) {
+            $item->url = '#jogos';
+        }
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_objects', 'modify_menu_item_url');
 ?>

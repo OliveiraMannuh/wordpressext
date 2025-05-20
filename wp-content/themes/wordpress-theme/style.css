@@ -430,7 +430,7 @@ footer {
 .features-title {
     font-size: 2.5rem;
     color: var(--white); /* Alterado para branco para melhor contraste */
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     font-family: var(--font-primary);
     font-weight: 700;
 }
@@ -590,12 +590,53 @@ footer {
 .pricing-title {
     font-size: 2.5rem;
     color: var(--white);
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     font-family: var(--font-primary);
     font-weight: 700;
     text-align: center;
     position: relative;
 }
+
+.pricing-header{
+
+}
+
+svg.icone-amarelo {
+    overflow: visible;
+    cursor: pointer;
+    color: #ffc000;
+}
+
+/* Seletor para o path mais grosso */
+svg.icone-amarelo path[stroke-width="4"] {
+    transition: transform 0.4s ease;
+}
+
+/* Seletor para o path mais fino */
+svg.icone-amarelo path[stroke-width="2"] {
+    transition: transform 0.4s ease;
+}
+
+/* Animação no hover - path grosso primeiro */
+svg.icone-amarelo:hover path[stroke-width="4"] {
+    transform: translateX(15px);
+    transition-delay: 0s;
+}
+
+/* Animação no hover - path fino depois */
+svg.icone-amarelo:hover path[stroke-width="2"] {
+    transform: translateX(15px);
+    transition-delay: 0.2s;
+}
+
+/* Respeito à preferência de redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+    svg.icone-amarelo path {
+        transition: none;
+        transform: none;
+    }
+}
+
 /*decoração abaixo do planos*/
 .decoration {
     display: block;
@@ -825,7 +866,7 @@ footer {
     width: 100%;
     max-width: 350px;
     height: auto;
-    left: 30px;
+    left: 5px;
 }
 
 .planning-image img:hover {
@@ -867,34 +908,37 @@ footer {
 
 .icone-notificacao:first-child {
     position: absolute;
-    top: -20px;
-    left: 50px;
+    top: 90px;
+    left: -24px;
     z-index: 3;
-    width: 120px;
-    height: 120px;
-    transform: rotate(30deg);/*atualizar*/
+    width: 110px;
+    height: 110px;
+    transform: rotate(-24deg);/*atualizar*/
 }
 
 .calendario-estelar:last-child {
     position: absolute;
-    bottom: -20px;
+    bottom: 100px;
     right: 50px;
     z-index: 3;
     width: 100px;
     height: 100px;
+    transform: rotate(4deg);
+    left: -20px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .icone-notificacao:first-child {
-        top: -15px;
-        left: 30px;
+        top: 90px;
+        left: 0px;
         width: 100px;
         height: 100px;
+        transform: rotate(-20deg);
     }
 
     .calendario-estelar:last-child {
-        bottom: -15px;
+        bottom: 90px;
         right: 30px;
         width: 90px;
         height: 90px;
@@ -1140,7 +1184,7 @@ footer {
 .share-content p {
     font-size: 1.5rem;
     color: var(--white);
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
     line-height: 1.6;
     max-width: 500px;
     opacity: 0.9;
@@ -1149,7 +1193,7 @@ footer {
 
 .share-image {
     margin-top: 1rem;
-    max-width: 300px;
+    max-width: 500px;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -1158,10 +1202,15 @@ footer {
 .share-image img {
     width: 100%;
     height: auto;
-    max-width: 250px; /* Controla o tamanho máximo da imagem */
+    max-width: 450px; /* Controla o tamanho máximo da imagem */
     /*border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
     transition: transform 0.3s ease;
+}
+
+/*animação*/
+.share-image img:hover {
+    animation: float 3s ease-in-out infinite;
 }
 
 .share-options {
@@ -1250,6 +1299,14 @@ footer {
     margin-bottom: 1.5rem;
     font-family: var(--font-primary);
     font-weight: 700;
+}
+
+.spaced-repetition-section .icone-amarelo{ /*corrigir*/
+    position: absolute;
+    bottom: -35px;
+    right: 50px;
+    width: 132px;
+    height: 50px;
 }
 
 .spaced-repetition-header p {
@@ -1583,12 +1640,13 @@ footer {
 .spaced-study-image img {
     max-width: 400px;
     height: auto;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 .spaced-study-image:hover img {
     /*animation: floatStudy 1s ease-in-out infinite;*/
     transform: translateY(-5px);
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes floatStudy {
@@ -1846,5 +1904,73 @@ footer {
 @media (max-width: 480px) {
     .custom-logo {
         max-width: 100px;
+    }
+}
+
+/* Como Funciona a Seção */
+.how-it-works-section {
+    padding: 5rem 5%;
+    background: radial-gradient(#5F5DC6 0%, #2E2D60 100%);
+    /*background-color: var(--primary-dark);*/
+    overflow: hidden;
+}
+
+.how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-it-works-container h2 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.how-it-works-container h2 {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.how-it-works-container .icone-amarelo {
+    position: absolute;
+    bottom: -35px;
+    right: 50px;
+    width: 132px;
+    height: 50px;
+}
+
+.how-it-works-image {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.how-it-works-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .how-it-works-container h2 {
+        font-size: 2rem;
+    }
+
+    .how-it-works-container .icone-amarelo {
+        width: 60px;
+        bottom: -30px;
+        right: 45px;
+    }
+
+    .how-it-works-image {
+        padding: 1rem;
     }
 }

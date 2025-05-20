@@ -2,6 +2,13 @@
 
 <section class="features-section" id="jogos">
     <h2 class="features-title">Diversão Que Ensina</h2>
+        <!--svg para decoração abaixo dos planos -->
+        <span>
+            <svg class="icone-amarelo" xmlns="http://www.w3.org/2000/svg" width="145" height="25" viewBox="0 0 145 25" fill="none">
+                <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="currentcolor" stroke-width="4"/>
+                <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="currentcolor" stroke-width="2"/>
+            </svg>
+        </span>    
     <p class="features-subtitle">Desafie seu cérebro de um jeito viciante! <br>Resolva quizzes, bata seus recordes em simulados e vire mestre nos flashcards com a adrenalina de um jogo! 🎮</p>
     
     <div class="features-grid">
@@ -39,50 +46,19 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/desempenho.svg" alt="Ícone de Desempenho">
         </div>
     </div>
-</section>
+</section> <!-- features-section -->
 
-<section class="study-choice-section">
-    <div class="study-choice-container">
-        <div class="study-choice-content">
-            <h2>Escolha Como <span>Estudar</span></h2>
-            <p>No Exitus Educacional você pode escolher qualquer jogo para testar os seus conhecimentos sem pagar nada. 📚✨</p>
-            <a href="#" class="study-button">EXPERIMENTE GRÁTIS!</a>
-        </div>
-        <div class="study-choice-images">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons-interativo.svg" 
-                 alt="Ícones Interativos" 
-                 class="small-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-studying.svg" 
-                 alt="Astronauta Estudando" 
-                 class="main-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket-small.svg" 
-                 alt="Foguete" 
-                 class="small-image">
-        </div>
-    </div>
-</section>
-
-<section class="share-section">
-    <h2>Compartilhamento de Jogos e Decks</h2>
-    <div class="share-container">
-        <div class="share-content">
-            <!--<h2>Compartilhamento de Jogos e Decks</h2>-->
-            <p>Curtiu um deck ou criou um jogo irado? Compartilha com a galera e ajuda todo mundo a mandar bem nesse assunto também!</p>
-            
-            <div class="share-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronauts-handshake.svg" 
-                     alt="Astronautas compartilhando">
-            </div>
-        </div>
-
-        <div class="share-options">
-            <h3>Compartilhe:</h3>
-            <ul class="share-list">
-                <li><a href="#">Materiais</a></li>
-                <li><a href="#">Decks</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="#">Simulados</a></li>
-            </ul>
+<section class="how-it-works-section">
+    <div class="how-it-works-container">
+        <h2>
+            Como Funciona?
+            <svg class="icone-amarelo" width="145" height="25" viewBox="0 0 145 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="#FFB802" stroke-width="2" stroke-linecap="round"/>
+                <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="#FFB802" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+        </h2>               
+        <div class="how-it-works-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/how-it-works.svg" alt="Interface do aplicativo com astronauta">
         </div>
     </div>
 </section>
@@ -90,7 +66,12 @@
 <section class="spaced-repetition-section">
     <div class="spaced-repetition-container">
         <div class="spaced-repetition-header">
-            <h2>Você conhece a Repetição Espaçada?</h2>
+            <h2>Você conhece a Repetição Espaçada?
+                <svg class="icone-amarelo" width="145" height="25" viewBox="0 0 145 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="#FFB802" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="#FFB802" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </h2>
             <p>Nossos jogos usam a técnica da repetição espaçada, um jeito inteligente de revisar o conteúdo aos poucos, no tempo certo, pra você aprender de verdade e sem estresse!</p>
             <h3>Veja os benefícios:</h3>
         </div>
@@ -236,6 +217,56 @@
     </div>
 </section>
 
+<section class="study-choice-section">
+    <div class="study-choice-container">
+        <div class="study-choice-content">
+            <h2>Escolha Como <span>Estudar</span></h2>
+            <p>No Exitus Educacional você pode escolher qualquer jogo para testar os seus conhecimentos sem pagar nada. 📚✨</p>
+            <a href="#" class="study-button">EXPERIMENTE GRÁTIS! 🚀</a>
+        </div>
+        <div class="study-choice-images">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons-interativo.svg" 
+                 alt="Ícones Interativos" 
+                 class="small-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-studying.svg" 
+                 alt="Astronauta Estudando" 
+                 class="main-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket-small.svg" 
+                 alt="Foguete" 
+                 class="small-image">
+        </div>
+    </div>
+</section>
+
+<section class="share-section">
+    <h2>Compartilhamento de Jogos e Decks</h2>
+    <div class="share-container">
+        <div class="share-content">
+            <!--<h2>Compartilhamento de Jogos e Decks</h2>-->
+            <p>Curtiu um deck ou criou um jogo irado? Compartilha com a galera e ajuda todo mundo a mandar bem nesse assunto também!</p>
+            
+            <div class="share-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronauts-handshake.svg" 
+                     alt="Astronautas compartilhando">
+            </div>
+        </div>
+
+        <div class="share-options">
+            <h3>Compartilhe:</h3>
+            <ul class="share-list">
+                <li><a href="#">Materiais</a></li>
+                <li><a href="#">Decks</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Simulados</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
 
 <section class="planning-section">
     <div class="planning-container">
@@ -277,22 +308,16 @@
 </section>
 
 <section class="pricing-section">
-    <h2 class="pricing-title">Planos</h2>
-<!--svg para decoração abaixo dos planos -->
-    <svg class="decoration" width="120" height="20" viewBox="0 0 120 20">
-            <!-- Linha cinza do meio -->
-            <!-- x1,y1: Ponto inicial da linha nas coordenadas
-                x2,y2: Ponto final da linha nas coordenadas
-                stroke-width: Espessura da linha 
-            <line x1="30" y1="10" x2="90" y2="10" stroke="#FFA500" stroke-width="3" />-->
-            
-            <!-- Linha curva amarela à esquerda -->
-            <path d="M20 10 Q 35 0, 60 10" stroke="#FFA500" stroke-width="3" fill="none" />
-            
-            <!-- Linha curva amarela à direita -->
-            <path d="M60 10 Q 85 20, 100 10" stroke="#FFA500" stroke-width="3" fill="none" />
-        </svg>
-    
+        <div class="pricing-header">
+            <h2 class="pricing-title">Planos</h2>
+            <!--svg para decoração abaixo dos planos -->
+            <span>
+                <svg class="icone-amarelo" xmlns="http://www.w3.org/2000/svg" width="145" height="25" viewBox="0 0 145 25" fill="none">
+                    <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="currentcolor" stroke-width="4"/>
+                    <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="currentcolor" stroke-width="2"/>
+                </svg>
+            </span>
+        </div>
     <div class="pricing-grid">
         <!-- Plano Astronauta -->
         <div class="pricing-card">

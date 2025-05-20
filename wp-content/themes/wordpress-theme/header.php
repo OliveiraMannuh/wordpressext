@@ -35,7 +35,7 @@
             <h1>Exitus Educacional</h1>
             <p>Transformando aprendizado em diversão</p>
             <p>Domine qualquer matéria com quizzes, simulados, flashcards gamificados e acompanhamento das métricas de evolução para turbinar seu aprendizado, tudo com a vibe de um jogo! 🎮</p>
-            <a href="#" class="button">ACESSO ESTELAR GRATUITO 🚀</a>
+            <a href="#" class="button">comece a jogar!</a>
         </div>
     </div>
 </div>

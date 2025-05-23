@@ -1,14 +1,11 @@
 <?php get_header(); ?>
 
 <section class="features-section" id="jogos">
-    <h2 class="features-title">Diversão Que Ensina</h2>
-        <!--svg para decoração abaixo dos planos -->
-        <span>
-            <svg class="icone-amarelo" xmlns="http://www.w3.org/2000/svg" width="145" height="25" viewBox="0 0 145 25" fill="none">
-                <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="currentcolor" stroke-width="4"/>
-                <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="currentcolor" stroke-width="2"/>
-            </svg>
-        </span>    
+    <h2 class="features-title">Diversão Que Ensina!</h2>
+    <svg class="icone-amarelo" width="145" height="25" viewBox="-125 0 145 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="#FFB802" stroke-width="2" stroke-linecap="round"/>
+        <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="#FFB802" stroke-width="4" stroke-linecap="round"/>
+    </svg>
     <p class="features-subtitle">Desafie seu cérebro de um jeito viciante! <br>Resolva quizzes, bata seus recordes em simulados e vire mestre nos flashcards com a adrenalina de um jogo! 🎮</p>
     
     <div class="features-grid">
@@ -67,11 +64,12 @@
     <div class="spaced-repetition-container">
         <div class="spaced-repetition-header">
             <h2>Você conhece a Repetição Espaçada?
-                <svg class="icone-amarelo" width="145" height="25" viewBox="0 0 145 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="#FFB802" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="#FFB802" stroke-width="4" stroke-linecap="round"/>
+            <svg class="icone-amarelo" xmlns="http://www.w3.org/2000/svg" width="145" height="25" viewBox="0 0 145 25" fill="none">
+                    <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="currentcolor" stroke-width="4"/>
+                    <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="currentcolor" stroke-width="2"/>
                 </svg>
             </h2>
+
             <p>Nossos jogos usam a técnica da repetição espaçada, um jeito inteligente de revisar o conteúdo aos poucos, no tempo certo, pra você aprender de verdade e sem estresse!</p>
             <h3>Veja os benefícios:</h3>
         </div>
@@ -193,7 +191,7 @@
 </section>
 
 <section class="spaced-study-section">
-    <h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>
+    <h2>Aprendizado Inteligente com a Repetição Espaçada</h2>
     <div class="spaced-study-container">
         <div class="spaced-study-content">
         <!--<h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>-->
@@ -324,8 +322,7 @@
             <div class="pricing-header">
                 <h3>Astronauta</h3>
                 <div class="price">
-                    <span class="amount">R$ 0</span>
-                    <span class="period">por mês</span>
+                    <span class="amount">Grátis</span>
                 </div>
             </div>
             <ul class="pricing-features">

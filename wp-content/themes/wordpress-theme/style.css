@@ -114,6 +114,71 @@ nav a:hover {
     color: #FFFFFF;
 }
 
+/*Botões login e teste grátis*/
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.login-button {
+    color: var(--primary-dark);
+    background: var(--white);
+    width: 65px;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    background: var(--secondary);
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
+    color: var(--white);
+}
+
+.trial-button {
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100px;
+    font-family: var(--font-primary);
+    text-decoration: none;
+}
+
+.trial-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
+    color: var(--white);
+    background-color: var(--primary-dark);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .header-buttons {
+        margin: 1rem 0;
+        width: 100%;
+        justify-content: center;
+        order: 3;
+    }
+
+    .login-button,
+    .trial-button {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
 .section-hero {
     background-color: #7D65E1;
     color: #FFFFFF;
@@ -244,6 +309,7 @@ nav a:hover {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 /*Responsividade*/
@@ -268,6 +334,36 @@ nav a:hover {
     }
 }
 
+/*Imagem do foguete*/
+.hero-foguete {
+    position: absolute;
+    bottom: 100px; /* Ajuste a posição do foguete */
+    right: 0; /* Alinha o foguete à direita */
+    width: 790px; /* Largura do foguete */
+    height: auto; /* Altura automática para manter a proporção */
+    z-index: 2; /* Garante que o foguete fique acima da camada de opacidade */
+}
+
+
+.hero-foguete:hover img {
+    transform: translateY(-5px);
+    animation: float 3s ease-in-out infinite;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .hero-foguete {
+        display: none;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-foguete {
+display: none;
+    }
+}
+
 /* Estilos do Menu Principal Centralizado */
 .main-navigation {
     width: 100%;
@@ -282,6 +378,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+    display: none; /* Esconde o menu padrão do WordPress */
 }
 
 .main-navigation ul {
@@ -503,6 +600,7 @@ footer {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
     /*margin: 0 auto;
     padding: 2rem 2rem 0;*/
     /*gradiente na borda*/
@@ -1772,7 +1870,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
         "content image";
     grid-template-columns: 1fr auto;
     overflow: hidden;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -1782,7 +1880,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     color: #2E2D60;
     font-size: 2.2rem;
     margin: 0;
-    padding: 2.0rem;
+    padding: 1.0rem;
     text-align: center;
     /*border-bottom: 1px solid rgba(125, 101, 225, 0.1);*/
 }
@@ -1807,11 +1905,12 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 
 .performance-content p {
     color: var(--primary-dark);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     opacity: 0.9;
     margin-top: 10px;
     text-align: justify;
+    font-weight: 600;
 }
 
 .performance-image {

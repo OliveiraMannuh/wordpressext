@@ -28,6 +28,11 @@
             ));
             ?>
         </nav>
+
+        <div class="header-buttons">
+            <a href="https://exituseduc-front-15207959809.us-central1.run.app/authentication/side-login" class="login-button" target="_blank" rel="noopener noreferrer">Log in</a>
+            <a href="#" class="trial-button">Teste grátis!</a>
+        </div>
     </header>
 
     <div class="hero-section">
@@ -37,6 +42,11 @@
             <p>Domine qualquer matéria com quizzes, simulados, flashcards gamificados e acompanhamento das métricas de evolução para turbinar seu aprendizado, tudo com a vibe de um jogo! 🎮</p>
             <a href="#" class="button">comece a jogar!</a>
         </div>
+    </div>
+
+    <div class="hero-foguete">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-foguete.svg" alt="Hero Foguete">
+
     </div>
 </div>
 </body>

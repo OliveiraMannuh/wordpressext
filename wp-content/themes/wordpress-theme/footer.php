@@ -41,14 +41,15 @@
     <div class="footer-bottom">
         <p>&copy; <?php echo date("Y"); ?> Exitus Educacional. Todos os direitos reservados.</p>
     </div>
+
 </footer>
 
 <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2L8 11H16L12 2Z" fill="currentColor"/>
-        <path d="M12 22V8" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 </button>
+<?php wp_footer(); ?>
 
 <style>
     footer {

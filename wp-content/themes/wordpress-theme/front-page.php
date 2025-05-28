@@ -232,12 +232,15 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket-small.svg" 
                  alt="Foguete" 
                  class="small-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flashcards-icone.svg" 
+                 alt="Flashcards Ícone" 
+                 class="small-image">
         </div>
     </div>
 </section>
 
 <section class="share-section">
-    <h2>Compartilhamento de Jogos e Decks</h2>
+    <h2>Compartilhamento de <span>Jogos e Decks</span></h2>
     <div class="share-container">
         <div class="share-content">
             <!--<h2>Compartilhamento de Jogos e Decks</h2>-->
@@ -281,7 +284,7 @@
             <div class="planning-features">
                 <div class="planning-feature-item">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/revision-icon.svg" alt="Revisão">
-                    <span>Revisão espaçada</span>
+                    <span>Repetição espaçada</span>
                 </div>
                 
                 <div class="planning-feature-item">
@@ -327,10 +330,10 @@
             </div>
             <ul class="pricing-features">
                 <li>Criar até 10 materiais</li>
-                <li>10 simulados por dia</li>
-                <li>10 quizzes por dia</li>
-                <li>10 decks</li>
-                <li>50 MB para upload de material</li>
+                <li>Criar até 10 decks</li>
+                <li>Jogar simulado ilimitado</li>
+                <li>Jogar quiz ilimitado</li>
+                <li>Jogar flashcard ilimitado</li>
             </ul>
             <div class="pricing-image astronaut-img"></div>
         </div>
@@ -338,7 +341,7 @@
         <!-- Plano Planeta -->
         <div class="pricing-card">
             <div class="pricing-header">
-                <h3>Planeta</h3>
+                <h3>Foguete</h3>
                 <div class="price">
                     <span class="amount">R$ 12,90</span>
                     <span class="period">por mês</span>
@@ -346,18 +349,18 @@
             </div>
             <ul class="pricing-features">
                 <li>Criar até 30 materiais</li>
-                <li>20 simulados por dia</li>
-                <li>20 quizzes por dia</li>
-                <li>20 decks</li>
-                <li>75 MB para upload de material</li>
+                <li>Criar até 30 decks</li>
+                <li>Jogar simulado ilimitado</li>
+                <li>Jogar quiz ilimitado</li>
+                <li>Jogar flashcard ilimitado</li>
             </ul>
-            <div class="pricing-image planet-img"></div>
+            <div class="pricing-image rocket-img"></div>
         </div>
 
         <!-- Plano Foguete -->
         <div class="pricing-card">
             <div class="pricing-header">
-                <h3>Foguete</h3>
+                <h3>Planeta</h3>
                 <div class="price">
                     <span class="amount">R$ 25,90</span>
                     <span class="period">por mês</span>
@@ -365,12 +368,12 @@
             </div>
             <ul class="pricing-features">
                 <li>Criar até 50 materiais</li>
-                <li>Simulados ilimitados</li>
-                <li>50 Quizzes por dia</li>
-                <li>50 decks</li>
-                <li>100 MB para upload de material</li>
+                <li>Criar até 50 decks</li>
+                <li>Jogar simulado ilimitado</li>
+                <li>Jogar quiz ilimitado</li>
+                <li>Jogar flashcard ilimitado</li>
             </ul>
-            <div class="pricing-image rocket-img"></div>
+            <div class="pricing-image planet-img"></div>
         </div>
 
         <!-- Plano Galáxia -->
@@ -384,10 +387,10 @@
             </div>
             <ul class="pricing-features">
                 <li>Materiais ilimitados</li>
-                <li>Simulados ilimitados</li>
-                <li>Quizzes ilimitados</li>
                 <li>Decks ilimitados</li>
-                <li>500 MB para upload de material</li>
+                <li>Jogar simulado ilimitado</li>
+                <li>Jogar quiz ilimitado</li>
+                <li>Jogar flashcard ilimitado</li>
             </ul>
             <div class="pricing-image galaxy-img"></div>
         </div>

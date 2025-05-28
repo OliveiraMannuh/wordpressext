@@ -27,6 +27,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--white);
 }
 
 /* Ajusta o header quando a barra admin do WordPress está presente */
@@ -311,6 +312,9 @@ nav a:hover {
     transition: all 0.3s ease;
     text-decoration: none;
 }
+.hero-content-box .button:hover {
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
+}
 
 /*Responsividade*/
 @media (max-width: 768px) {
@@ -342,13 +346,22 @@ nav a:hover {
     width: 790px; /* Largura do foguete */
     height: auto; /* Altura automática para manter a proporção */
     z-index: 2; /* Garante que o foguete fique acima da camada de opacidade */
-}
+    animation: diagonal-move-anim 3s linear infinite alternate;
+    }
 
 
 .hero-foguete:hover img {
-    transform: translateY(-5px);
-    animation: float 3s ease-in-out infinite;
+
 }
+
+@keyframes diagonal-move-anim {
+    100% {
+        transform: translate(0, 0);
+    }
+    0% {
+        transform: translate(-150px, 150px);
+    }
+  }
 
 /*Responsividade*/
 @media (max-width: 768px) {
@@ -507,6 +520,7 @@ footer {
     margin-bottom: 20px;
 }
 
+
 /* Cards ou boxes de conteúdo */
 .content-box {
     background: var(--white);
@@ -592,7 +606,7 @@ footer {
 .feature-card {
     /*background: #FFFFFF;*/
     border-radius: 20px;
-    height: 570px;
+    height: 640px; /*570*/
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -641,11 +655,10 @@ footer {
 
 .feature-content p {
     color: var(--primary-dark);
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     opacity: 0.9;
     text-align: center;
-    margin-bottom: 2rem;
     padding: 0 20px 0 20px;
 }
 
@@ -795,7 +808,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 .pricing-card {
     background: white;
     border-radius: 20px;
-    padding: 2rem 2rem 0;
+    padding: 1rem 2rem 0;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
@@ -846,6 +859,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     margin-bottom: 1rem;
     color: var(--primary-dark);
     font-size: 1.0rem;
+    font-weight: 600;
 }
 
 .pricing-image {
@@ -914,7 +928,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 .planning-content h2 {
     font-size: 3rem;
     color: var(--primary-dark);
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     font-family: var(--font-primary);
     font-weight: 700;
     text-align: center;
@@ -1137,6 +1151,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     transform: translateY(-3px);
     background: var(--primary-dark); /*background: #6753b4;*/
     color: var(--white);
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
 }
 
 .study-choice-images {
@@ -1195,24 +1210,42 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 }
 
 /* Posicionamento específico para cada imagem pequena */
-.small-image:first-child {
+.small-image:nth-child(1) {
     top: 15%;
-    left: 5%;
+    left: 0%;
     transform: rotate(-15deg);
 }
 
-.small-image:first-child:hover {
+.small-image:nth-child(1):hover {
     transform: rotate(-15deg) scale(1.1);
 }
 
-.small-image:last-child {
+.small-image:nth-child(2) {
     bottom: 20%;
-    right: 2%;
+    right: 20%;
     transform: rotate(30deg);
 }
 
-.small-image:last-child:hover {
+.small-image:nth-child(2):hover {
     transform: rotate(15deg) scale(1.1);
+}
+
+.small-image:nth-child(3) {
+    top: 40%;
+    right: -2%;
+    transform: rotate(25deg);
+}
+.small-image:nth-child(3):hover {
+    transform: rotate(25deg) scale(1.1);
+}
+
+.small-image:nth-child(4) {
+    bottom: 15%;
+    left: 0%;
+    transform: rotate(-20deg);
+}
+.small-image:nth-child(4):hover {
+    transform: rotate(-20deg) scale(1.1);
 }
 
 /* Responsividade */
@@ -1231,16 +1264,49 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
         height: 80px;
     }
 
-    .small-image:first-child {
+    .small-image:nth-child(1) {
         top: 10%;
-        left: 5%;
+        left: -10%;
     }
 
-    .small-image:last-child {
+    .small-image:nth-child(2) {
         bottom: 10%;
         right: 5%;
     }
+    .small-image:nth-child(3) {
+        top: 30%;
+        right: -15%;
+    }
+    .small-image:nth-child(4) {
+        bottom: 10%;
+        left: -15%;
+    }
 }
+
+    @media (max-width: 480px) {
+        .study-choice-images::before {
+            width: 250px;
+            height: 250px;
+        }
+
+        .small-image:nth-child(1) {
+            top: 5%;
+            left: -5%;
+        }
+
+        .small-image:nth-child(2) {
+            bottom: 5%;
+            right: 0%;
+        }
+        .small-image:nth-child(3) {
+            top: 20%;
+            right: -10%;
+        }
+        .small-image:nth-child(4) {
+            bottom: 5%;
+            left: -10%;
+        }
+    }
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -1283,6 +1349,8 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     padding-bottom: 10px;
 }
 
+
+
 /*Responsividade*/
 @media (max-width: 768px) {
     .share-section h2 {
@@ -1320,7 +1388,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     color: var(--white);
     /*margin-bottom: 2rem;*/
     line-height: 1.6;
-    max-width: 500px;
+    max-width: 800px;
     opacity: 0.9;
     text-align: justify;
 }
@@ -1638,8 +1706,8 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: var(--primary);
-    color: white;
+    background: #7D65E1;
+    color: #FFFFFF;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1649,8 +1717,11 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     visibility: hidden;
     transition: all 0.3s ease;
     transform: translateY(100px);
-    z-index: 999;
-    padding: 12px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
 }
 
 .back-to-top.show {
@@ -1660,8 +1731,8 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 }
 
 .back-to-top:hover {
-    background: var(--secondary);
-    transform: translateY(-5px);
+    background: #6549E3;
+    transform: translateY(-2px);
 }
 
 .back-to-top svg {
@@ -1812,7 +1883,7 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 .spaced-study-image img {
     max-width: 400px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 .spaced-study-image:hover img {

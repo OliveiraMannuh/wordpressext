@@ -35,12 +35,74 @@
     </div>
 
     <div class="performance-card">
-        <h3>Desempenho</h3>
-        <div class="performance-content">
+        <div class="performance-header">
+            <h3>Desempenho</h3>
             <p>Monitore sua evolução com relatórios de desempenho que mostram o seu progresso! 📊✨</p>
+        </div>
+        <div class="performance-content">
+            <div class="chart-container">
+                <div class="donut-chart">
+                    <div class="chart-center">
+                        <span class="percentage">67%</span>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="dot success"></span>
+                            <span>Acertos</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="dot error"></span>
+                            <span>Erros</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graph-container">
+                <h4>Acertos por conteúdos<br>com base na última tentativa</h4>
+                <div class="bar-chart">
+                    <div class="bar-group">
+                        <div class="bars">
+                            <div class="bar success" style="height: 40%"></div>
+                            <div class="bar error" style="height: 25%"></div>
+                        </div>
+                        <span class="label">Antiguidade</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bars">
+                            <div class="bar success" style="height: 60%"></div>
+                            <div class="bar error" style="height: 20%"></div>
+                        </div>
+                        <span class="label">Idade Media</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bars">
+                            <div class="bar success" style="height: 45%"></div>
+                            <div class="bar error" style="height: 30%"></div>
+                        </div>
+                        <span class="label">Idade Moderna</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bars">
+                            <div class="bar success" style="height: 35%"></div>
+                            <div class="bar error" style="height: 25%"></div>
+                        </div>
+                        <span class="label">Idade Contemporanea</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="performance-image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/desempenho.svg" alt="Ícone de Desempenho">
+            <div class="linha-vazia">
+                <span></span>
+            </div>
+            <div class="linha-vazia">
+                <span></span>
+            </div>
+            <div class="linha-vazia">
+                <span></span>
+            </div>
         </div>
     </div>
 </section> <!-- features-section -->
@@ -49,11 +111,11 @@
     <div class="how-it-works-container">
         <h2>
             Como Funciona?
-            <svg class="icone-amarelo" width="145" height="25" viewBox="0 0 145 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="#FFB802" stroke-width="2" stroke-linecap="round"/>
-                <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="#FFB802" stroke-width="4" stroke-linecap="round"/>
+            <svg class="icone-amarelo" width="32" height="8" viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7C6.67928 7 7.11111 3.5 16 3.5C24.8889 3.5 25.3207 7 31 7" stroke="#FFB802" stroke-width="4" stroke-linecap="round"/>
+                <path d="M1 5.39971C6.67928 5.39971 7.11111 1 16 1C24.8889 1 25.3207 5.39971 31 5.39971" stroke="#FFB802" stroke-width="2" stroke-linecap="round"/>
             </svg>
-        </h2>               
+        </h2>
         <div class="how-it-works-image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/how-it-works.svg" alt="Interface do aplicativo com astronauta">
         </div>

@@ -532,27 +532,36 @@
 </section>
 
 <section class="spaced-study-section">
-    <h2>Aprendizado Inteligente com a Repetição Espaçada</h2>
+    <!--<h2>Aprendizado Inteligente com a Repetição Espaçada</h2>-->
     <div class="spaced-study-container">
-        <div class="spaced-study-content">
-        <!--<h2>Aprendizado Inteligente com a <br>Repetição Espaçada</h2>-->
-            
-            <p class="study-description">
-            Um estudo da Universidade Federal de São Carlos (UFSCar) revela que a 
-            repetição espaçada é uma técnica fundamental para combater o esquecimento e 
-            promover a retenção de conhecimento a longo prazo.
-            </p>
-
-            <blockquote class="study-quote">
-                <p>"A repetição espaçada (spaced repetition – SR) é uma técnica de estudos baseada em evidências científicas que visa memorização e manutenção a longo prazo das informações aprendidas."</p>
-                <cite>(NASCIMENTO, 2023 - UFSCar)</cite>
-            </blockquote>
+        <div class="spaced-study-header">
+            <h2>Aprendizado Inteligente com a Repetição Espaçada</h2>
+            <svg class="icone-amarelo" xmlns="http://www.w3.org/2000/svg" width="145" height="25" viewBox="0 0 145 25" fill="none">
+                <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="currentcolor" stroke-width="4"/>
+                <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="currentcolor" stroke-width="2"/>
+            </svg>
         </div>
-        
-        <div class="spaced-study-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-reading.svg" 
-                 alt="Astronauta estudando">
-        </div>
+            <div class="spaced-study-wrapper">
+                <div class="spaced-study-content">
+                
+                    <p class="study-description">
+                    Um estudo da Universidade Federal de São Carlos (UFSCar) revela que a
+                    repetição espaçada é uma técnica fundamental para combater o esquecimento e
+                    promover a retenção de conhecimento a longo prazo.
+                    </p>
+                </div>
+                
+                <div class="spaced-study-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-reading.svg"
+                        alt="Astronauta estudando">
+                </div>
+            </div>
+            <div class="spaced-study-footer">
+                <blockquote class="study-quote">
+                    <p>"A repetição espaçada (spaced repetition – SR) é uma técnica de estudos baseada em evidências científicas que visa memorização e manutenção a longo prazo das informações aprendidas."</p>
+                    <cite>(NASCIMENTO, 2023 - UFSCar)</cite>
+                </blockquote>
+            </div>
     </div>
 </section>
 

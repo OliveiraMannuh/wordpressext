@@ -2,7 +2,7 @@
 
 <section class="features-section" id="jogos">
     <h2 class="features-title">Diversão Que Ensina!</h2>
-    <svg class="icone-amarelo" width="145" height="25" viewBox="-125 0 145 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="icone-amarelo" width="145" height="25" viewBox="0 0 145 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="#FFB802" stroke-width="2" stroke-linecap="round"/>
         <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="#FFB802" stroke-width="4" stroke-linecap="round"/>
     </svg>
@@ -35,23 +35,10 @@
     </div>
 
     <div class="performance-card">
-        <span data-star="1">★</span>
-        <span data-star="2">★</span>
-        <span data-star="3">★</span>
-        <span data-star="4">★</span>
-        <span data-star="5">★</span>
-        <span data-star="6">★</span>
-        <span data-star="7">★</span>
-        <span data-star="8">★</span>
-        <span data-star="9">★</span>
-        <span data-star="10">★</span>
-        <span data-star="11">★</span>
-        <span data-star="12">★</span>
-        <span data-star="13">★</span>
-        <span data-star="14">★</span>
+
         <div class="performance-header">
             <h3>Desempenho</h3>
-            <p>Monitore sua evolução com relatórios de desempenho que mostram o seu progresso! 📊✨</p>
+            <p>Monitore sua evolução com relatórios de desempenho<br> que mostram o seu progresso! 📊✨</p>
         </div>
         <div class="performance-content">
             <div class="chart-container">
@@ -77,44 +64,42 @@
                 <div class="bar-chart">
                     <div class="bar-group">
                         <div class="bars">
-                            <div class="bar success" style="height: 40%"></div>
-                            <div class="bar error" style="height: 25%"></div>
+                            <div class="bar success" style="height: 60%"></div>
+                            <div class="bar error" style="height: 45%"></div>
                         </div>
-                        <span class="label"><br>Antiguidade</span>
+                        <span class="label">Antiguidade</span>
                     </div>
                     <div class="bar-group">
                         <div class="bars">
-                            <div class="bar success" style="height: 60%"></div>
-                            <div class="bar error" style="height: 20%"></div>
+                            <div class="bar success" style="height: 80%"></div>
+                            <div class="bar error" style="height: 40%"></div>
                         </div>
                         <span class="label">Idade Média</span>
                     </div>
                     <div class="bar-group">
                         <div class="bars">
-                            <div class="bar success" style="height: 45%"></div>
-                            <div class="bar error" style="height: 30%"></div>
+                            <div class="bar success" style="height: 75%"></div>
+                            <div class="bar error" style="height: 50%"></div>
                         </div>
                         <span class="label">Idade Moderna</span>
                     </div>
                     <div class="bar-group">
                         <div class="bars">
-                            <div class="bar success" style="height: 35%"></div>
-                            <div class="bar error" style="height: 25%"></div>
+                            <div class="bar success" style="height: 65%"></div>
+                            <div class="bar error" style="height: 45%"></div>
                         </div>
                         <span class="label">Idade Contemporânea</span>
                     </div>
                 </div>
-            </div>
-            <div class="performance-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/desempenho.svg" alt="Ícone de Desempenho">
-                <div class="linha-vazia">
-                    <span></span>
-                </div>
-                <div class="linha-vazia">
-                    <span></span>
-                </div>
-                <div class="linha-vazia">
-                    <span></span>
+                <div class="graph-legend">
+                        <div class="legend-item-graph">
+                            <span class="dot success"></span>
+                            <span>Acertos</span>
+                        </div>
+                        <div class="legend-item-graph">
+                            <span class="dot error"></span>
+                            <span>Erros</span>
+                        </div>
                 </div>
             </div>
 
@@ -132,250 +117,72 @@
                     <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="currentcolor" stroke-width="2"/>
                 </svg>
         </h2>
-        
+        <!-- cards baralho -->
         <div class="cards-container">
             <!-- Card da Esquerda -->
-            <div class="feature-card left">
-                <div class="card-content">
-                    <div class="card-header-works">
-                        <h3 class="deck-white">Decks</h3>
-                        <h3 class="deck-rosa">Decks</h3>
-                    </div>
-                    <div class="search-container">
-                        <div class="search-wrapper">
-                            <input type="text" placeholder="Filtre sua busca aqui" class="search-input">
-                            <button class="search-button">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21 21L15.5 15.5M15.5 15.5C17.0913 13.9087 18 11.7956 18 9.5C18 5.35786 14.6421 2 10.5 2C6.35786 2 3 5.35786 3 9.5C3 13.6421 6.35786 17 10.5 17C12.7956 17 14.9087 16.0913 16.5 14.5L15.5 15.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <button class="add-button">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="card-grid">
-                    <!-- Card de Exemplo -->
-                    <div class="deck-card">
-                        <div class="deck-header">
-                            <h3 class="deck-title">Inglês</h3>
-                            <span class="card-count">20 cards</span>
-                        </div>
-                        
-                        <div class="deck-meta">
-                            <span class="last-access">Último acesso: 06/04</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="deck-actions">
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="deck-topic">
-                            <div class="topic-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#6B4EE6">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                                </svg>
-                            </div>
-                            <span class="topic-text">Verb to be</span>
-                        </div>
-                    </div>
-                    <!-- Repita o mesmo padrão para os outros cards -->
-
-                    <!-- Card de Exemplo 2 -->
-                    <div class="deck-card">
-                        <div class="deck-header">
-                            <h3 class="deck-title">Matemática</h3>
-                            <span class="card-count">90 cards</span>
-                        </div>
-                        
-                        <div class="deck-meta">
-                            <span class="last-access">Último acesso: 04/04</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="deck-actions">
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="deck-topic">
-                            <div class="topic-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#6B4EE6">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                                </svg>
-                            </div>
-                            <span class="topic-text">Álgebra, Equações do 2º grau</span>
-                        </div>
-                    </div>
-                    <!-- Repita o mesmo padrão para os outros cards -->
-
-                    <!-- Card de Exemplo 3 -->
-                    <div class="deck-card">
-                        <div class="deck-header">
-                            <h3 class="deck-title">Literatura</h3>
-                            <span class="card-count">45 cards</span>
-                        </div>
-                        
-                        <div class="deck-meta">
-                            <span class="last-access">Último acesso: 02/04</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="deck-actions">
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="deck-topic">
-                            <div class="topic-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#6B4EE6">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                                </svg>
-                            </div>
-                            <span class="topic-text">Trovadorismo e Barroco</span>
-                        </div>
-                    </div>
-                    <!-- Repita o mesmo padrão para os outros cards -->
-
-                    <!-- Card de Exemplo 4 -->
-                    <div class="deck-card">
-                        <div class="deck-header">
-                            <h3 class="deck-title">História</h3>
-                            <span class="card-count">20 cards</span>
-                        </div>
-                        
-                        <div class="deck-meta">
-                            <span class="last-access">Último acesso: 06/04</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="deck-actions">
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                            <button class="action-btn">
-                                <svg width="20" height="20" viewBox="0 0 24 24">
-                                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="deck-topic">
-                            <div class="topic-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#6B4EE6">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                                </svg>
-                            </div>
-                            <span class="topic-text">Era Vargas e Ditadura</span>
-                        </div>
-                    </div>
-                    <!-- Repita o mesmo padrão para os outros cards -->
+            <div class="card-decks">
+            <div class="deck">
+                <div class="deck-header">
+                    <h4>Ciências</h4>
+                    <span class="last-access">Último acesso: 03/04</span>
                 </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%"></div>
+                </div>
+                <div class="deck-actions">
+                    <button class="action-btn"><i class="fas fa-play"></i></button>
+                    <button class="action-btn"><i class="fas fa-book"></i></button>
+                    <button class="action-btn"><i class="fas fa-bell"></i></button>
+                </div>
+                <div class="deck-topic">
+                    <i class="fas fa-flask"></i>
+                    <span>Ecologia</span>
                 </div>
             </div>
+            
+            <div class="deck">
+                <div class="deck-header">
+                    <h4>Biologia</h4>
+                    <span class="last-access">Último acesso: 03/04</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <div class="deck-actions">
+                    <button class="action-btn"><i class="fas fa-play"></i></button>
+                    <button class="action-btn"><i class="fas fa-book"></i></button>
+                    <button class="action-btn"><i class="fas fa-bell"></i></button>
+                </div>
+                <div class="deck-topic">
+                    <i class="fas fa-leaf"></i>
+                    <span>Botânica</span>
+                </div>
+            </div>
+
+            <div class="deck">
+                <div class="deck-header">
+                    <h4>Física</h4>
+                    <span class="last-access">Último acesso: 03/04</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <div class="deck-actions">
+                    <button class="action-btn"><i class="fas fa-play"></i></button>
+                    <button class="action-btn"><i class="fas fa-book"></i></button>
+                    <button class="action-btn"><i class="fas fa-bell"></i></button>
+                </div>
+                <div class="deck-topic">
+                    <i class="fas fa-leaf"></i>
+                    <span>Cinemática</span>
+                </div>
+            </div>
+        </div>
 
             <!-- Card da Direita -->
             <div class="feature-card right">
                 <div class="card-content">
-                    <h3>Seu Conhecimento em Cards, Sua Vitória nos Estudos!</h3>
+                    <h3>Seu conhecimento em cards, sua vitória nos estudos!</h3>
                     <p>Monte Decks de estudo com facilidade: são como baralhos de cartas, as perguntas e respostas que você precisa.</p>
                     <p class="segunda-frase">Organize seus Decks por matéria e acesse tudo num piscar de olhos. Pronto? Agora escolha como quer aprender: teste seus limites com Simulados, veja o que sabe com Quizzes rápidos ou revise com Flashcards espertos. Aprender e jogar, tudo junto!</p>
                 </div>
@@ -570,7 +377,7 @@
         <div class="study-choice-content">
             <h2>Escolha Como <span>Estudar</span></h2>
             <p>No Exitus Educacional você pode escolher qualquer jogo para testar os seus conhecimentos sem pagar nada. 📚✨</p>
-            <a href="#" class="study-button">EXPERIMENTE GRÁTIS! 🚀</a>
+            <a href="https://exituseduc-front-15207959809.us-central1.run.app/authentication/side-login" class="study-button" target="_blank" rel="noopener noreferrer">EXPERIMENTE GRÁTIS! 🚀</a>
         </div>
         <div class="study-choice-images">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons-interativo.svg" 
@@ -592,24 +399,36 @@
 <section class="share-section">
     <h2>Compartilhamento de <span>Jogos e Decks</span></h2>
     <div class="share-container">
-        <div class="share-content">
-            <!--<h2>Compartilhamento de Jogos e Decks</h2>-->
-            <p>Curtiu um deck ou criou um jogo irado? Compartilha com a galera e ajuda todo mundo a mandar bem nesse assunto também!</p>
-            
+        <div class="share-content">            
             <div class="share-image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronauts-handshake.svg" 
                      alt="Astronautas compartilhando">
             </div>
         </div>
 
-        <div class="share-options">
+        <div class="share-text">
+        <p>Curtiu um deck ou criou um jogo irado? Compartilha com a galera e ajuda todo mundo a mandar bem nesse assunto também!</p>
+        </div>
+
+        <div class="share-options-container">
             <h3>Compartilhe:</h3>
-            <ul class="share-list">
-                <li><a href="#">Materiais</a></li>
-                <li><a href="#">Decks</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="#">Simulados</a></li>
-            </ul>
+            <div class="share-card-materials">
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/materials-icon.svg" alt="Materiais">
+                <span>Materiais</span>
+            </div>
+            <div class="share-card-quizzes">
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quizzes-icon.svg" alt="Quizzes">
+
+                <span>Quizzes</span>
+            </div>
+            <div class="share-card-simulados">
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/simulados-icon.svg" alt="Simulados">
+
+                <span>Simulados</span>
+            </div>
         </div>
     </div>
 </section>
@@ -662,12 +481,12 @@
         <div class="pricing-header">
             <h2 class="pricing-title">Planos</h2>
             <!--svg para decoração abaixo dos planos -->
-            <span>
+
                 <svg class="icone-amarelo" xmlns="http://www.w3.org/2000/svg" width="145" height="25" viewBox="0 0 145 25" fill="none">
                     <path d="M1.00016 15.2711C18.1407 8.34427 70.832 -1.93441 144.473 12.3652" stroke="currentcolor" stroke-width="4"/>
                     <path d="M26.2943 14.0041C38.9177 9.44643 77.3772 3.50055 130.227 16.1786" stroke="currentcolor" stroke-width="2"/>
                 </svg>
-            </span>
+
         </div>
     <div class="pricing-grid">
         <!-- Plano Astronauta -->

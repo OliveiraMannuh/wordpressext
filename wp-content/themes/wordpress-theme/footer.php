@@ -5,41 +5,64 @@
 
 <footer>
     <div class="footer-widgets">
+    <div class="footer-column about">
+        <div class="footer-logo">
+            <img src="<?php echo get_theme_file_uri('assets/images/logo-exitus.png'); ?>" alt="Exitus Educacional">
+        </div>
+        <p class="footer-description">
+            Transformando aprendizado em diversão e proporcionando conhecimento com a revisão espaçada.
+        </p>
+        <div class="social-icons">
+            <a href="#" class="social-link facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="social-link linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
         <div class="footer-column">
-            <h3>Sobre Nós</h3>
+            <h3>Aprendizado</h3>
             <ul>
-                <li><a href="#">Nossa História</a></li>
-                <li><a href="#">Equipe</a></li>
-                <li><a href="#">Carreiras</a></li>
+                <li><a href="#jogos">Materiais</a></li>
+                <li><a href="#jogos">Flashcards</a></li>
             </ul>
         </div>
         <div class="footer-column">
-            <h3>Serviços</h3>
+            <h3>Jogos</h3>
             <ul>
-                <li><a href="#">Portal Educacional</a></li>
-                <li><a href="#">Suporte</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#jogos">Simulados</a></li>
+                <li><a href="#jogos">Quizzes</a></li>
             </ul>
         </div>
+
         <div class="footer-column">
             <h3>Recursos</h3>
             <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Tutoriais</a></li>
-                <li><a href="#">Webinars</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Contato</h3>
-            <ul>
-                <li><a href="page-contact.php">Fale Conosco</a></li>
-                <li><a href="#">Suporte Técnico</a></li>
-                <li><a href="#">Localização</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Fale Conosco</a></li>
             </ul>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; <?php echo date("Y"); ?> Exitus Educacional. Todos os direitos reservados.</p>
+        <div class="footer-bottom-container">
+            <div class="footer-copyright">
+                <p>&copy; <?php echo date('Y'); ?> Exitus Educacional. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
     </div>
 
 </footer>
@@ -61,6 +84,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        padding: 50px;
     }
     .footer-column {
         flex: 1;
@@ -68,7 +92,7 @@
         margin: 10px;
     }
     .footer-column h3 {
-        color: #7D65E1;
+        color: var(--white);
     }
     .footer-column ul {
         list-style: none;
@@ -84,8 +108,122 @@
     }
     .footer-bottom {
         text-align: center;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        padding: 24px 0;
     }
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #7D65E1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-bottom-container {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+    /* footer primeira coluna com logo */
+.footer-column.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 0px 10px 0px 30px;
+}
+
+.footer-logo {
+    max-width: 200px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+    max-width: 300px;
+}
+
+.social-icons {
+    /*display: flex; ocultando por enquanto*/
+    display: none;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: #6B4EE6;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-logo {
+        max-width: 160px;
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+}
 
     /*Responsividade*/
     @media (max-width: 768px) {

@@ -191,9 +191,9 @@
 
         <!-- Ícones Laterais -->
         <div class="side-icons">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-1.svg" alt="Ícone 1">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-2.svg" alt="Ícone 2">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-3.svg" alt="Ícone 3">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-1.png" alt="Ícone 1">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-2.png" alt="Ícone 2">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-3.png" alt="Ícone 3">
         </div>
 
         <!-- Nuvem -->
@@ -203,7 +203,7 @@
 
         <!-- Astronauta -->
         <div class="astronaut-container">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-how-it-works.svg" alt="Astronauta">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-how-it-works.png" alt="Astronauta">
         </div>
     </div>
 </section>
@@ -227,7 +227,7 @@
             <div class="benefit-card">
                 <div class="card-header">
                     <div class="card-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/memoria.svg" alt="Memória de Longo Prazo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/memoria.png" alt="Memória de Longo Prazo">
                     </div>
                     <h3>Memória de Longo Prazo</h3>
                 </div>
@@ -255,7 +255,7 @@
             <div class="benefit-card">
                 <div class="card-header">
                     <div class="card-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eficiencia.svg" alt="Eficiência no Estudo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/eficiencia.png" alt="Eficiência no Estudo">
                     </div>
                     <h3>Eficiência no Estudo</h3>
                 </div>
@@ -283,7 +283,7 @@
             <div class="benefit-card">
                 <div class="card-header">
                     <div class="card-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/compreensao.svg" alt="Compreensão Aprimorada">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/compreensao.png" alt="Compreensão Aprimorada">
                     </div>
                     <h3>Compreensão Aprimorada</h3>
                 </div>
@@ -311,7 +311,7 @@
             <div class="benefit-card">
                 <div class="card-header">
                     <div class="card-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/motivacao.svg" alt="Aumento da Motivação">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/motivacao.png" alt="Aumento da Motivação">
                     </div>
                     <h3>Aumento da Motivação</h3>
                 </div>
@@ -359,7 +359,7 @@
                 </div>
                 
                 <div class="spaced-study-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-reading.svg"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-reading.png"
                         alt="Astronauta estudando">
                 </div>
             </div>
@@ -380,16 +380,16 @@
             <a href="https://exituseduc-front-15207959809.us-central1.run.app/authentication/side-login" class="study-button" target="_blank" rel="noopener noreferrer">EXPERIMENTE GRÁTIS! 🚀</a>
         </div>
         <div class="study-choice-images">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons-interativo.svg" 
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons-interativo.png" 
                  alt="Ícones Interativos" 
                  class="small-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-studying.svg" 
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronaut-studying.png" 
                  alt="Astronauta Estudando" 
                  class="main-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket-small.svg" 
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket-small.png" 
                  alt="Foguete" 
                  class="small-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flashcards-icone.svg" 
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/flashcards-icone.png" 
                  alt="Flashcards Ícone" 
                  class="small-image">
         </div>
@@ -401,7 +401,7 @@
     <div class="share-container">
         <div class="share-content">            
             <div class="share-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronauts-handshake.svg" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/astronauts-handshake.png" 
                      alt="Astronautas compartilhando">
             </div>
         </div>
@@ -414,18 +414,18 @@
             <h3>Compartilhe:</h3>
             <div class="share-card-materials">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/materials-icon.svg" alt="Materiais">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/materials-icon.png" alt="Materiais">
                 <span>Materiais</span>
             </div>
             <div class="share-card-quizzes">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quizzes-icon.svg" alt="Quizzes">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/quizzes-icon.png" alt="Quizzes">
 
                 <span>Quizzes</span>
             </div>
             <div class="share-card-simulados">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/simulados-icon.svg" alt="Simulados">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/simulados-icon.png" alt="Simulados">
 
                 <span>Simulados</span>
             </div>
@@ -442,7 +442,7 @@
     <div class="planning-container">
     <div class="planning-image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icone-notificacao.svg" alt="Ícone de notificação" class="icone-notificacao">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/planning-astronaut.svg" alt="Astronauta planejando" class="imagem-plan-principal">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/planning-astronaut.png" alt="Astronauta planejando" class="imagem-plan-principal">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/calendario-estelar.svg" alt="Calendário Estelar" class="calendario-estelar">
     </div>
 

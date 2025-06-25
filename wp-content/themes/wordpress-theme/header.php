@@ -46,7 +46,7 @@
     </div>
 
     <div class="hero-foguete">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-foguete.svg" alt="Hero Foguete">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-foguete.png" alt="Hero Foguete">
 
     </div>
 </div>

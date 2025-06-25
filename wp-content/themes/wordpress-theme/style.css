@@ -567,7 +567,7 @@ footer::before{
 .features-section {
     text-align: center;
     position: relative;
-    background-image: url('./assets/images/bk-features-section.svg');
+    background-image: url('./assets/images/bk-features-section.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -725,25 +725,19 @@ footer::before{
 
 /* Estilos específicos para cada imagem */
 .simulados-img {
-    background-image: url('assets/images/simulados.svg');
+    background-image: url('assets/images/simulados.png');
     background-color: #7D65E1;
     border-radius: 0 0 20px 20px;
 }
 
 .quizzes-img {
-    background-image: url('assets/images/quizzes.svg');
+    background-image: url('assets/images/quizzes.png');
     background-color: #7D65E1;
     border-radius: 0 0 20px 20px;
 }
 
 .flashcards-img {
-    background-image: url('assets/images/flashcards.svg');
-    background-color: #7D65E1;
-    border-radius: 0 0 20px 20px;
-}
-
-.desempenho-img {
-    background-image: url('assets/images/desempenho.svg');
+    background-image: url('assets/images/flashcards.png');
     background-color: #7D65E1;
     border-radius: 0 0 20px 20px;
 }
@@ -957,28 +951,28 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 
 /* Estilos específicos para cada imagem */
 .astronaut-img {
-    background-image: url('assets/images/astronaut.svg');
+    background-image: url('assets/images/astronaut.png');
     height: 350px;
     margin-bottom: 30px;
     transform: scale(1.30);
 }
 
 .planet-img {
-    background-image: url('assets/images/planet.svg');
+    background-image: url('assets/images/planet.png');
     height: 350px;
     margin-bottom: 30px;
     transform: scale(1.30);
 }
 
 .rocket-img {
-    background-image: url('assets/images/rocket.svg');
+    background-image: url('assets/images/rocket.png');
     height: 350px;
     margin-bottom: 30px;
     transform: scale(1.30);;
 }
 
 .galaxy-img {
-    background-image: url('assets/images/galaxy.svg');
+    background-image: url('assets/images/galaxy.png');
     height: 350px;
     margin-bottom: 30px;
     transform: scale(1.30);
@@ -992,9 +986,10 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
 /* Planejamento */
 .planning-section {
     position: relative;
-    padding: 15rem 5%;
+    padding: 20rem 5%;
     z-index: 1;
-    background-image: url('assets/images/spaced-repetition-bk.svg');
+    background-image: url('assets/images/spaced-repetition-bk.png');
+    /*background-image: url('assets/images/spaced-repetition-bk.svg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1227,9 +1222,10 @@ img.imagem-plan-principal {
 /* Escolha Como Estudo */
 .study-choice-section {
     position: relative;
-    padding: 6rem 5%;
+    padding: 10rem 5%;
     z-index: 1;
-    background-image: url('assets/images/study-choice-section-bk.svg');
+    /*background-image: url('assets/images/study-choice-section-bk.svg');*/
+    background-image: url('assets/images/spaced-repetition-bk.png');
     background-color: #372B69; /* Cor de fundo padrão */
     background-repeat: no-repeat;
     background-size: cover;
@@ -1520,7 +1516,8 @@ img.imagem-plan-principal {
     padding: 10rem 5% 15rem 5%;
     background-color: var(--primary-dark);
     overflow: hidden;
-    background-image: url('assets/images/how-it-works-section.svg');
+    background-image: url('assets/images/Section_1500.png');
+    /*background-image: url('assets/images/how-it-works-section.svg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1761,9 +1758,10 @@ img.imagem-plan-principal {
 /* Spaced Repetition Section */
 .spaced-repetition-section {
     position: relative;
-    padding: 10rem 5% 1rem 5%;
+    padding: 14rem 5% 1rem 5%;
     z-index: 1;
-    background-image: url('assets/images/spaced-repetition-bk.svg');
+    background-image: url('assets/images/spaced-repetition-bk.png');
+    /*background-image: url('assets/images/spaced-repetition-bk.svg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2107,7 +2105,8 @@ img.imagem-plan-principal {
     padding: 10rem 5%;
     background-color: var(--primary-dark);
     overflow: hidden;
-    background-image: url('assets/images/how-it-works-section.svg');
+    /*background-image: url('assets/images/how-it-works-section.svg');*/
+    background-image: url('assets/images/Section_1500.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2839,7 +2838,8 @@ img.imagem-plan-principal {
     /*padding: 10rem 5%;*/
     background-color: var(--primary-dark);
     overflow: hidden;
-    background-image: url('assets/images/how-it-works-section.svg');
+    background-image: url('assets/images/Section_1500.png');
+    /*background-image: url('assets/images/how-it-works-section.svg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -3029,6 +3029,7 @@ img.imagem-plan-principal {
     color: #6B7280;
     cursor: pointer;
     transition: color 0.3s ease;
+    font-size: 3rem;
 }
 
 .action-btn:hover {

@@ -3254,6 +3254,7 @@ img.imagem-plan-principal {
 @media (max-width: 480px) {
     .card-decks {
         transform: scale(0.8);
+        
     }
 
     .deck {
@@ -3737,5 +3738,171 @@ img.imagem-plan-principal {
     .cloud-container img {
         width: 100%;
         height: auto;
+    }
+}
+
+/* Estilos para a página de privacidade */
+.privacy-page {
+    /*background-image: url(http://localhost/wordpress/wp-content/uploads/2025/06/Section-1.png);*/
+    position: relative;
+    background-image: url('assets/images/how-it-works-section.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.privacy-page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 43, 105, -0.5);
+    z-index: -1; /* Coloca a camada de opacidade atrás do conteúdo */
+}
+
+.privacy-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(55, 43, 105, 0.527) 0%,
+        rgba(55, 43, 105, 0.459) 100%
+    );
+    z-index: -10; /* Coloca a camada de opacidade atrás do conteúdo */
+}
+
+.privacy-page .site-header {
+    position: relative;
+    z-index: 3;
+    background: transparent !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.privacy-policy-section {
+    /*background: var(--white);*/
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 80px - 300px);
+}
+
+.privacy-policy-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.privacy-header{
+    padding-bottom: 4rem;
+}
+
+.privacy-header h1 {
+    color: var(--white);
+    font-size: 3rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.privacy-header h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    color: var(--white);
+    font-family: var(--font-primary);
+    text-align: left;
+}
+
+.privacy-header p{
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 3rem;
+    margin: 0 auto;
+}
+
+.privacy-header ul {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.privacy-header ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.privacy-header li {
+    margin-bottom: 10px;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.privacy-content {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.update-date {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--white);
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .privacy-page {
+        margin-top: 60px;
+    }
+
+    .privacy-policy-section {
+        padding: 2rem 1rem;
+    }
+
+    .privacy-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Ajustes para a logo na página de privacidade */
+.privacy-page .site-branding {
+    text-align: center;
+    /*padding: 2rem 0;*/
+}
+
+.privacy-page .site-branding img {
+    max-height: 90px;
+    width: auto;
+}
+
+.privacy-page .custom-logo-link {
+    display: inline-block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .privacy-page .site-branding {
+        /*padding: 1.5rem 0;*/
+    }
+
+    .privacy-page .site-branding img {
+        max-height: 50px;
     }
 }

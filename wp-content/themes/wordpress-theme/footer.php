@@ -59,7 +59,7 @@
                 <p>&copy; <?php echo date('Y'); ?> Exitus Educacional. Todos os direitos reservados.</p>
             </div>
             <div class="footer-links">
-                <a href="#">Política de Privacidade</a>
+                <a href="<?php echo get_page_link(get_page_by_path('politica-de-privacidade')->ID); ?>">Política de Privacidade</a>
                 <a href="#">Termos de Uso</a>
             </div>
         </div>

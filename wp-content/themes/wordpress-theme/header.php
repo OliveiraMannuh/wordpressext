@@ -9,6 +9,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php if (!defined('IS_PRIVACY_PAGE')) : ?>
 <div class="header-hero-wrapper">
     <header class="site-header">
         <div class="site-branding">
@@ -50,5 +51,6 @@
 
     </div>
 </div>
+<?php endif; ?>
 </body>
 </html>

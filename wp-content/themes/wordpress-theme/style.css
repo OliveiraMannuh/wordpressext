@@ -601,8 +601,10 @@ footer::before{
 
 @media (max-width: 480px) {
     .features-section {
+        padding: 2rem 1rem;
         margin-top: -1px;
     }
+
 }
 
 .features-section .icone-amarelo{
@@ -1200,6 +1202,24 @@ img.imagem-plan-principal {
     }
 }
 
+@media (max-width: 480px) {
+    .planning-image::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .planning-image img {
+        max-width: 250px;
+    }
+
+    .calendario-estelar:last-child{
+        top: 350px;
+        left: -10px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
 /*Imagens ao redor do círculo*/
 
 .icone-notificacao {
@@ -1291,6 +1311,18 @@ img.imagem-plan-principal {
         padding: 4rem 2rem; /* Reduzindo o padding em telas menores */
         margin-bottom: -8rem; /* Ajustando a margem inferior */
     }
+}
+
+@media (max-width: 480px) {
+    .study-choice-section {
+        padding: 2rem 1rem; /* Reduzindo ainda mais o padding em telas menores */
+        margin-bottom: -2rem; /* Ajustando a margem inferior */
+    }
+
+    .study-choice-container{
+        padding: 2rem !important;
+    }
+
 }
 
 .study-choice-container {
@@ -1505,8 +1537,8 @@ img.imagem-plan-principal {
         }
 
         .small-image:nth-child(1) {
-            top: 5%;
-            left: -5%;
+            top: 20%;
+            left: -45%;
         }
 
         .small-image:nth-child(2) {
@@ -1514,12 +1546,12 @@ img.imagem-plan-principal {
             right: 0%;
         }
         .small-image:nth-child(3) {
-            top: 20%;
-            right: -10%;
+            top: 40%;
+            right: -50%;
         }
         .small-image:nth-child(4) {
-            bottom: 5%;
-            left: -10%;
+            bottom: 20%;
+            left: -45%;
         }
     }
 
@@ -1548,10 +1580,26 @@ img.imagem-plan-principal {
     }
 }
 
+@media (max-width: 480px) {
+    .study-choice-content h2 {
+        font-size: 1.8rem; /* Reduz o tamanho do título em telas menores */
+        width: 100%; /* Garante que o título ocupe toda a largura disponível */
+    }
+
+    .study-choice-content p {
+        font-size: 1.2rem; /* Reduz o tamanho do parágrafo em telas menores */
+        width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
+    }
+
+    .main-image {
+        width: 180px !important; /* Reduzindo a largura máxima da imagem principal */
+    }
+}
+
 /* Compartilhamento */
 .share-section {
     position: relative;
-    padding: 10rem 5% 15rem 5%;
+    padding: 1rem 5% 12rem 5%;
     background-color: var(--primary-dark);
     overflow: hidden;
     background-image: url('assets/images/Section_1500.png');
@@ -1664,7 +1712,7 @@ img.imagem-plan-principal {
 
 .share-text p {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
     text-align: justify;
     line-height: 1.6;
@@ -1708,6 +1756,12 @@ img.imagem-plan-principal {
 .share-card img {
     width: 80px;
     height: 80px;
+}
+
+.share-card-materials img,
+.share-card-quizzes img,
+.share-card-simulados img {
+    filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.25));
 }
 
 .share-card-materials span,
@@ -1796,7 +1850,7 @@ img.imagem-plan-principal {
 /* Spaced Repetition Section */
 .spaced-repetition-section {
     position: relative;
-    padding: 14rem 5% 1rem 5%;
+    padding: 10rem 5% 1rem 5%;
     z-index: 1;
     background-image: url('assets/images/spaced-repetition-bk.png');
     /*background-image: url('assets/images/spaced-repetition-bk.svg');*/
@@ -2232,7 +2286,7 @@ img.imagem-plan-principal {
 /* Seção de Estudo com Espaçamento */
 .spaced-study-section {
     position: relative;
-    padding: 10rem 5%;
+    padding: 4rem 5%;
     background-color: var(--primary-dark);
     overflow: hidden;
     /*background-image: url('assets/images/how-it-works-section.svg');*/
@@ -2360,6 +2414,39 @@ img.imagem-plan-principal {
     }
 }
 
+@media (max-width: 480px) {
+    .spaced-study-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .study-description {
+        font-size: 0.9rem;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .spaced-study-image img {
+        max-width: 200px !important;
+
+    }
+
+    .spaced-study-wrapper{
+        gap: 20px;
+    }
+
+    .spaced-study-header .icone-amarelo{
+        position: absolute;
+        right: 150px;
+        width: 132px;
+        height: 30px;
+    }
+
+    .study-quote p{
+        font-size: 1.1rem !important;
+        max-width: 100%;
+    }
+}
+
 .study-quote {
     border-left: 4px solid #7D65E1;
     padding-left: 1.5rem;
@@ -2473,10 +2560,16 @@ img.imagem-plan-principal {
     }
 
     .performance-content {
-        grid-template-columns: 1fr;
-        grid-template-areas: "chart graph";
-        gap: 1rem;
-        padding: 1rem;
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+            "chart"
+            "graph"
+            "image" !important;
+        gap: 1rem !important;
+        align-items: center !important;
+        padding: 0.5rem !important;
+        margin: 0 auto !important;
+        max-width: 480px !important;
     }
 
     .chart-container {
@@ -2486,20 +2579,38 @@ img.imagem-plan-principal {
     }
 
     .graph-container {
-        padding: 1rem;
-        min-width: auto;
+        padding: 1rem !important;
+        min-width: auto !important;
         width: 100%;
-        transform: scale(0.9);
+        transform: scale(0.7);
+        margin: auto !important;
+    }
+
+    .performance-header {
+        max-width: 100% !important;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        display: flex !important;
+        grid-area: header !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
     }
 
     .performance-header h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
     }
 
     .performance-header p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0 0.5rem;
+        max-width: 100%;
+        margin-top: 0;
+        line-height: 1.5;
+        text-align: center;
     }
 
     .donut-chart {
@@ -3029,39 +3140,34 @@ img.imagem-plan-principal {
     }
 
     .cards-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        align-items: center !important;
+        grid-template-columns: 1fr !important;
+        display: grid !important;
+        gap: 1rem !important;
 
-    .card-decks{
-        right: 135px;
-        padding: 30px;
-        justify-content: center;
-        height: 500px;
     }
 
     /*feature-card right*/
     .feature-card.right{
-        padding: 1.5rem;
-        height: 270px;
-        width: 380px;
+        height: 320px !important;
+        width: 380px !important;
     }
 
     .card-content{
-        padding: 1.5rem;
+        padding: 0.5rem;
     }
 
     .astronaut-container{
-        width: 350px;
+        left: 135px !important;
         right: -136px;
-        bottom: 75px;
+        bottom: 55px !important;
     }
 
     .astronaut-container img{
-        width: 200px;
-        height: auto;
+        width: 290px !important;
+        height: auto !important;
         margin-bottom: 20px;
+        right: 50px !important;
     }
 
     .cloud-container{
@@ -3073,8 +3179,15 @@ img.imagem-plan-principal {
     }
 
     .cloud-container img{
-        width: 150px;
-        height: auto;
+        width: 350px !important;
+        height: 100px !important;
+        left: -185px !important;
+        top: 90px !important;
+    }
+
+    /*segunda frase*/
+    .feature-card.right p.segunda-frase{
+        padding-right: 0px !important;
     }
 }
 
@@ -3254,7 +3367,11 @@ img.imagem-plan-principal {
 @media (max-width: 480px) {
     .card-decks {
         transform: scale(0.8);
-        
+        right: 105px;
+        padding: 30px;
+        justify-content: center;
+        height: 500px;
+        /*margin-right: -100px !important;*/
     }
 
     .deck {
@@ -3789,7 +3906,7 @@ img.imagem-plan-principal {
 
 .privacy-policy-section {
     /*background: var(--white);*/
-    padding: 4rem 2rem;
+    padding: 2rem;
     min-height: calc(100vh - 80px - 300px);
 }
 
@@ -3804,7 +3921,7 @@ img.imagem-plan-principal {
 
 .privacy-header h1 {
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.1rem;
     font-family: var(--font-primary);
     font-weight: 700;
     text-align: center;
@@ -3812,7 +3929,7 @@ img.imagem-plan-principal {
 }
 
 .privacy-header h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-top: 40px;
     color: var(--white);
     font-family: var(--font-primary);
@@ -3821,7 +3938,7 @@ img.imagem-plan-principal {
 
 .privacy-header p{
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 3rem;
@@ -3841,7 +3958,7 @@ img.imagem-plan-principal {
 .privacy-header li {
     margin-bottom: 10px;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     text-align: justify;
 }
@@ -3904,5 +4021,162 @@ img.imagem-plan-principal {
 
     .privacy-page .site-branding img {
         max-height: 50px;
+    }
+}
+
+/* Página de Contato */
+.contact-page {
+    position: relative;
+    background-image: url('assets/images/how-it-works-section.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contact-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(55, 43, 105, 0.527) 0%,
+        rgba(55, 43, 105, 0.459) 100%
+    );
+    z-index: -10; /* Coloca a camada de opacidade atrás do conteúdo */
+}
+
+.contact-page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 43, 105, -0.5);
+    z-index: -1; /* Coloca a camada de opacidade atrás do conteúdo */
+}
+
+.contact-page .header-hero-wrapper {
+    display: none !important;
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 80px - 300px);
+}
+
+.contact-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
+    background-color: rgba(96, 83, 180, 0.9);
+    border-radius: 50px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+    color: var(--white);
+    font-size: 2.1rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    color: var(--white);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilos do WPForms */
+.wpforms-container {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.wpforms-form label {
+    color: var(--white) !important;
+    font-weight: 500 !important;
+}
+
+.wpforms-form input[type="text"],
+.wpforms-form input[type="email"],
+.wpforms-form textarea {
+    padding: 0.8rem !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    font-size: 1rem !important;
+}
+
+.wpforms-form textarea {
+    height: 150px !important;
+}
+
+.wpforms-submit {
+    background-color: var(--primary) !important;
+    color: white !important;
+    padding: 1rem 2rem !important;
+    border: none !important;
+    border-radius: 5px !important;
+    font-size: 1.1rem !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.wpforms-submit:hover {
+    background-color: var(--primary-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        padding: 1rem;
+        box-shadow: 0 4px 15px rgba(125, 101, 225, 0.3);
+        background-color: rgba(96, 83, 180, 0.9);
+        border-radius: 50px;
+    }
+
+    .wpforms-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding-top: 60px;
+    }
+
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+
+    .contact-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .wpforms-container {
+        padding: 1rem;
+    }
+
+    .wpforms-submit {
+        width: 100% !important;
     }
 }

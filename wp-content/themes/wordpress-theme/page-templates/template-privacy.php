@@ -22,7 +22,7 @@ get_header(); ?>
     <div class="privacy-policy-section">
         <div class="privacy-policy-container">
             <div class="privacy-header">
-                <h1>POLÍTICA DE PRIVACIDADE - EXITUS EDUCACIONAL</h1>
+                <h1>POLÍTICA DE PRIVACIDADE</h1>
                 <section>
             <h2>1. OBJETIVOS</h2>
             <p>A <strong>ORMEL – ORG. E ASSESSORIA ADMINISTRATIVA LTDA</strong>, pessoa jurídica de direito privado, inscrita no CNPJ sob o N° 00.808.751/0001-39, com sede em Fortaleza/CE, proprietária da plataforma educacional desenvolvida com o objetivo de apoiar o aprendizado de alunos e a atuação de professores, valoriza e respeita a privacidade de seus USUÁRIOS (alunos, professores, responsáveis legais e demais partes interessadas). Por meio desta Política de Privacidade, reforça seu compromisso com a proteção de dados pessoais.</p>
@@ -30,14 +30,10 @@ get_header(); ?>
             <p>É essencial que todos os usuários leiam atentamente esta Política antes de fornecerem seus dados.</p>
         </section>
 
-        <hr>
-
         <section>
             <h2>2. LEGISLAÇÃO DE PROTEÇÃO DE DADOS</h2>
             <p>A ORMEL segue as normas da <strong>LGPD</strong>, do <strong>Marco Civil da Internet (Lei nº 12.965/2014)</strong> e outras legislações pertinentes, assegurando aos USUÁRIOS o exercício pleno de seus direitos no tratamento de dados pessoais.</p>
         </section>
-
-        <hr>
 
         <section>
             <h2>3. INFORMAÇÕES GERAIS</h2>
@@ -49,7 +45,6 @@ get_header(); ?>
             </ul>
         </section>
 
-        <hr>
 
         <section>
             <h2>4. COLETA E TRATAMENTO DE DADOS</h2>
@@ -71,7 +66,6 @@ get_header(); ?>
             <p><strong>Decisões Automatizadas:</strong> A plataforma pode utilizar algoritmos para personalizar conteúdos e sugerir trilhas de aprendizado. O USUÁRIO poderá solicitar revisão dessas decisões automatizadas.</p>
         </section>
 
-        <hr>
 
         <section>
             <h2>5. ARMAZENAMENTO E SEGURANÇA</h2>
@@ -79,7 +73,6 @@ get_header(); ?>
             <p>Os dados permanecem armazenados pelo tempo necessário para cumprir suas finalidades ou obrigações legais. O USUÁRIO deve colaborar com a segurança adotando senhas fortes, protegendo seus dispositivos e não compartilhando credenciais.</p>
         </section>
 
-        <hr>
 
         <section>
             <h2>6. DIREITOS DOS USUÁRIOS (TITULARES)</h2>
@@ -97,7 +90,6 @@ get_header(); ?>
             <p>As solicitações poderão ser feitas gratuitamente pelo canal <span class="contact-info">suporte@exituseduc.com.br</span>. As respostas ocorrerão em até 15 dias úteis conforme o tipo de solicitação.</p>
         </section>
 
-        <hr>
 
         <section>
             <h2>7. LEGISLAÇÃO E FORO APLICÁVEIS</h2>
@@ -105,7 +97,6 @@ get_header(); ?>
             <p>O foro competente será o do domicílio do USUÁRIO.</p>
         </section>
 
-        <hr>
 
         <div class="update-date">
             📅 Última atualização: 26/06/2025

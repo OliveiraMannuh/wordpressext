@@ -338,7 +338,7 @@
     </div>
 </section>
 
-<section class="spaced-study-section">
+<section class="spaced-study-section" id="aprendizado">
     <!--<h2>Aprendizado Inteligente com a Repetição Espaçada</h2>-->
     <div class="spaced-study-container">
         <div class="spaced-study-header">
@@ -377,7 +377,7 @@
         <div class="study-choice-content">
             <h2>Escolha Como <span>Estudar</span></h2>
             <p>No Exitus Educacional você pode escolher qualquer jogo para testar os seus conhecimentos sem pagar nada. 📚✨</p>
-            <a href="https://exituseduc-front-15207959809.us-central1.run.app/authentication/side-login" class="study-button" target="_blank" rel="noopener noreferrer">EXPERIMENTE GRÁTIS! 🚀</a>
+            <a href="https://app.exituseduc.com/ " class="study-button" target="_blank" rel="noopener noreferrer">EXPERIMENTE GRÁTIS! 🚀</a>
         </div>
         <div class="study-choice-images">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons-interativo.png" 

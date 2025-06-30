@@ -10,6 +10,10 @@
 </head>
 <body <?php body_class(); ?>>
 <?php if (!defined('IS_PRIVACY_PAGE')) : ?>
+    <?php 
+    // Verifica se não é a página de contato ou privacidade
+    if (!defined('IS_CONTACT_PAGE') && !defined('IS_PRIVACY_PAGE')) : 
+    ?>
 <div class="header-hero-wrapper">
     <header class="site-header">
         <div class="site-branding">
@@ -32,8 +36,8 @@
         </nav>
 
         <div class="header-buttons">
-            <a href="https://exituseduc-front-15207959809.us-central1.run.app/authentication/side-login" class="login-button" target="_blank" rel="noopener noreferrer">Log in</a>
-            <a href="https://exituseduc-front-15207959809.us-central1.run.app/authentication/side-login" class="trial-button" target="_blank" rel="noopener noreferrer">Login</a>
+            <a href="https://app.exituseduc.com/ " class="login-button" target="_blank" rel="noopener noreferrer">Log in</a>
+            <a href="https://app.exituseduc.com/ " class="trial-button" target="_blank" rel="noopener noreferrer">Login</a>
         </div>
     </header>
 
@@ -42,7 +46,7 @@
             <h1>Exitus Educacional</h1>
             <p>Transformando aprendizado em diversão</p>
             <p class="justificado">Domine qualquer matéria com quizzes, simulados, flashcards gamificados e acompanhamento das métricas de evolução para turbinar seu aprendizado, tudo com a vibe de um jogo! 🎮</p>
-            <a href="https://exituseduc-front-15207959809.us-central1.run.app/authentication/side-login" class="button" target="_blank" rel="noopener noreferrer">comece a jogar!</a>
+            <a href="https://app.exituseduc.com/ " class="button" target="_blank" rel="noopener noreferrer">comece a jogar!</a>
         </div>
     </div>
 
@@ -51,6 +55,7 @@
 
     </div>
 </div>
+<?php endif; ?>
 <?php endif; ?>
 </body>
 </html>

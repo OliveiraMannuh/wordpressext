@@ -33,8 +33,8 @@
         <div class="footer-column">
             <h3>Aprendizado</h3>
             <ul>
-                <li><a href="#jogos">Materiais</a></li>
-                <li><a href="#jogos">Flashcards</a></li>
+                <li><a href="#aprendizado">Materiais</a></li>
+                <li><a href="#aprendizado">Flashcards</a></li>
             </ul>
         </div>
         <div class="footer-column">
@@ -48,8 +48,8 @@
         <div class="footer-column">
             <h3>Recursos</h3>
             <ul>
-                <li><a href="#">Política de privacidade</a></li>
-                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_path('politica-de-privacidade')->ID); ?>">Política de privacidade</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_path('pagina-de-contato')->ID); ?>">Fale Conosco</a></li>
             </ul>
         </div>
     </div>
@@ -97,6 +97,7 @@
     .footer-column ul {
         list-style: none;
         padding: 0;
+        line-height: 2;
     }
     .footer-column ul li a {
         color: #FCFCFC;
@@ -180,7 +181,7 @@
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
-    text-align: justify;
+    text-align: left;
     max-width: 300px;
 }
 

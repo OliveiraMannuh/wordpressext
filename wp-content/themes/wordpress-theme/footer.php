@@ -245,4 +245,15 @@
             text-align: center;
         }
     }
+
+    @media (max-width: 412px) {
+        .footer-column.about{
+            padding: 0px 10px;
+        }
+
+        .footer-widgets{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 </style>

@@ -641,6 +641,32 @@ footer::before{
     }
 }
 
+@media (max-width: 480px) {
+    .features-title {
+        font-size: 1.8rem; /* Reduz ainda mais o tamanho do título em telas muito pequenas */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .features-subtitle {
+        font-size: 1.2rem !important; /* Reduz o tamanho do subtítulo em telas muito pequenas */
+        text-align: center !important; /* Centraliza o subtítulo */
+        margin-bottom: 1rem !important; /* Ajusta a margem inferior */
+    }
+}
+
+@media (max-width: 412px) {
+    .features-title {
+        font-size: 1.5rem !important; /* Reduz o tamanho do título em telas muito pequenas */
+        text-align: center !important; /* Centraliza o título */
+    }
+
+    .features-subtitle{
+        font-size: 1.0rem !important; /* Reduz o tamanho do subtítulo em telas muito pequenas */
+        text-align: center !important; /* Centraliza o subtítulo */
+        margin-bottom: 1rem !important; /* Ajusta a margem inferior */
+    }
+}
+
 .features-subtitle {
     font-size: 1.5rem;
     color: var(--white); /* Alterado para branco para melhor contraste */
@@ -852,7 +878,17 @@ footer::before{
         right: 185px; /* Ajuste a posição horizontal conforme necessário */
         width: 110px; /* Largura do ícone amarelo */
         height: 30px; /* Altura do ícone amarelo */
-        margin-top: -30px; /* Ajuste a margem superior conforme necessário */
+        margin-top: -25px; /* Ajuste a margem superior conforme necessário */
+    }
+}
+
+@media (max-width: 412px) {
+    .pricing-header .icone-amarelo {
+        position: absolute;
+        right: 150px; /* Ajuste a posição horizontal conforme necessário */
+        width: 110px; /* Largura do ícone amarelo */
+        height: 30px; /* Altura do ícone amarelo */
+        margin-top: -20px; /* Ajuste a margem superior conforme necessário */
     }
 }
 
@@ -1086,6 +1122,16 @@ svg.icone-amarelo:hover path[stroke-width="2"] {
     .planning-content h2 {
         font-size: 2rem;
         text-align: center; /* Centraliza o título */
+    }
+}
+
+@media (max-width: 480px) {
+    .planning-content h2 {
+        font-size: 1.8rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .planning-subtitle{
+        font-size: 1.2rem; /* Reduz o tamanho do subtítulo em telas menores */
     }
 }
 
@@ -1596,6 +1642,22 @@ img.imagem-plan-principal {
     }
 }
 
+@media (max-width: 412px) {
+    .study-choice-content h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título em telas muito pequenas */
+        width: 100%; /* Garante que o título ocupe toda a largura disponível */
+    }
+
+    .study-choice-content p {
+        font-size: 1.0rem; /* Reduz o tamanho do parágrafo em telas muito pequenas */
+        width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
+    }
+
+    .main-image {
+        width: 150px !important; /* Reduzindo ainda mais a largura máxima da imagem principal */
+    }
+}
+
 /* Compartilhamento */
 .share-section {
     position: relative;
@@ -1643,6 +1705,18 @@ img.imagem-plan-principal {
 
     .share-section h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .share-section h2 {
+        font-size: 1.8rem; /* Reduzindo ainda mais o tamanho do título em telas menores */
+    }
+}
+
+@media (max-width: 412px) {
+    .share-section h2 {
+        font-size: 1.5rem; /* Reduzindo ainda mais o tamanho do título em telas menores */
     }
 }
 
@@ -1845,7 +1919,20 @@ img.imagem-plan-principal {
     .share-options {
         min-width: 250px;
     }
+
+    .share-text p{
+        font-size: 1.2rem; /* Reduz o tamanho do parágrafo em telas menores */
+        max-width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
+    }
 }
+
+@media (max-width: 412px) {
+    .share-text p{
+        font-size: 1.0rem; /* Reduz o tamanho do parágrafo em telas muito pequenas */
+        max-width: 100%; /* Garante que o parágrafo ocupe toda a largura disponível */
+    }
+}
+
 
 /* Spaced Repetition Section */
 .spaced-repetition-section {
@@ -1930,16 +2017,20 @@ img.imagem-plan-principal {
         height: 110px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 412px) {
     .spaced-repetition-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
+    }
+
+    .spaced-repetition-header p{
+        font-size: 1rem !important;
     }
 
     .spaced-repetition-header .icone-amarelo{
         position: absolute;
-        right: 95px;
+        right: 140px;
         width: 132px;
-        height: 105px;
+        height: 95px;
     }
 }
 
@@ -2281,7 +2372,56 @@ img.imagem-plan-principal {
         transform: scale(1.5);
         margin-bottom: 30px;
     }
+
+    .spaced-study-header .icone-amarelo {
+        position: absolute;
+        right: 150px;
+        width: 132px;
+        height: 30px;
+    }
+
+    .spaced-study-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .study-description {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .spaced-study-image img {
+        max-width: 200px !important;
+    }
+
+    .spaced-study-wrapper {
+        gap: 20px;
+    }
+
+    .pricing-header h2{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
 }
+
+@media (max-width: 412px) {
+    .spaced-study-container h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .spaced-study-header .icone-amarelo{
+        position: absolute !important;
+        right: 115px !important;
+        width: 132px !important;
+        height: 40px !important;
+    }
+
+    .pricing-header h2{
+        font-size: 1.5rem !important;
+        /*margin-bottom: 0.5rem !important;*/
+    }
+}
+
 
 /* Seção de Estudo com Espaçamento */
 .spaced-study-section {
@@ -2563,13 +2703,13 @@ img.imagem-plan-principal {
         grid-template-columns: 1fr !important;
         grid-template-areas:
             "chart"
-            "graph"
-            "image" !important;
+            "graph" !important;
         gap: 1rem !important;
         align-items: center !important;
-        padding: 0.5rem !important;
+        justify-content: center !important;
         margin: 0 auto !important;
-        max-width: 480px !important;
+        max-width: 300px !important;
+        padding: 0.5rem !important;
     }
 
     .chart-container {
@@ -2579,7 +2719,7 @@ img.imagem-plan-principal {
     }
 
     .graph-container {
-        padding: 1rem !important;
+        padding: 1.2rem !important;
         min-width: auto !important;
         width: 100%;
         transform: scale(0.7);
@@ -2598,14 +2738,14 @@ img.imagem-plan-principal {
     }
 
     .performance-header h3 {
-        font-size: 1.3rem;
+        font-size: 1.8rem !important;
         padding: 0.5rem;
         margin-bottom: 0.5rem;
         line-height: 1.4;
     }
 
     .performance-header p {
-        font-size: 0.9rem;
+        font-size: 1.2rem !important;
         padding: 0 0.5rem;
         max-width: 100%;
         margin-top: 0;
@@ -2632,6 +2772,7 @@ img.imagem-plan-principal {
         gap: 0.8rem;
         transform: scale(0.8);
         margin-top: 2rem;
+        padding: 1rem;
     }
 
     .bar {
@@ -2650,6 +2791,55 @@ img.imagem-plan-principal {
 
     .graph-legend {
         gap: 0.8rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .performance-card {
+        grid-template-areas:
+        "header"
+        "content"
+        "image";
+        grid-template-columns: 1fr;
+        width: 385px !important;
+        margin: 0 auto !important;
+        left: -20px;
+    }
+
+    .performance-content {
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+            "chart"
+            "graph" !important;
+        gap: 0.5rem !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+        max-width: 300px !important;
+        padding: 0.5rem !important;
+    }
+
+    .chart-container{
+        padding: 0.5rem 2rem 3rem 2rem !important; /*0.5rem 2rem 3rem 2rem;*/
+        max-width: 100% !important;
+        /*margin: 0 auto !important;*/
+        margin-right: 120px !important;
+    }
+
+    .performance-header h3{
+        font-size: 1.5rem !important;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+    }
+
+    .performance-header p{
+        font-size: 1.0rem !important;
+        padding: 0 0.5rem;
+        max-width: 100%;
+        margin-top: 0;
+        line-height: 1.5;
+        text-align: center;
     }
 }
 
@@ -3171,8 +3361,8 @@ img.imagem-plan-principal {
     }
 
     .cloud-container{
-        top: 1095px;
-        left: 270px;
+        top: 965px !important;
+        left: 435px !important;
         width: 50%;
         height: 100%;
         z-index: 10;
@@ -3188,6 +3378,70 @@ img.imagem-plan-principal {
     /*segunda frase*/
     .feature-card.right p.segunda-frase{
         padding-right: 0px !important;
+    }
+}
+
+@media (max-width: 412px) {
+    .how-it-works-section {
+        padding: 0rem !important;
+        margin-bottom: -60px !important;
+    }
+
+    .how-it-works-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .how-it-works-container .icone-amarelo {
+        width: 80px;
+        bottom: -15px;
+        right: 27px;
+    }
+
+    .how-it-works-image {
+        padding: 0.5rem;
+    }
+
+    .cards-container {
+        align-items: center !important;
+        grid-template-columns: 1fr !important;
+        display: grid !important;
+        gap: 0.5rem !important;
+    }
+
+    .card-decks{
+        transform: scale(0.75) !important;
+        padding: 1rem !important;
+        margin-right: -120px !important;
+        height: 320px !important;
+    }
+
+    .deck {
+        min-width: 200px !important;
+        height: 280px !important;
+    }
+
+    .deck-actions {
+        margin: 20px 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .feature-card.right{
+        height: 320px !important;
+        width: 330px !important;
+    }
+
+    .cloud-container{
+        top: 840px !important;
+        left: 400px !important;
+        width: 50%;
+        height: 100%;
+        z-index: 10;
+    }
+
+    .astronaut-container{
+        left: 120px !important;
+        bottom: 55px !important;
     }
 }
 
@@ -3367,28 +3621,33 @@ img.imagem-plan-principal {
 @media (max-width: 480px) {
     .card-decks {
         transform: scale(0.8);
-        right: 105px;
-        padding: 30px;
+        right: 70px !important;
+        padding: 20px;
         justify-content: center;
-        height: 500px;
-        /*margin-right: -100px !important;*/
+        height: 400px;
     }
 
     .deck {
-        min-width: 200px;
-        height: 280px;
+        min-width: 200px !important;
+        height: 280px !important;
     }
 
     .deck:nth-child(1) {
-        right: 220px;
+        right: 240px;
+        z-index: 2;
+        transform: translateX(0) rotate(-10deg);
     }
 
     .deck:nth-child(2) {
-        right: 140px;
+        right: 160px;
+        z-index: 3;
+        transform: translateX(20px) rotate(0deg);
     }
 
     .deck:nth-child(3) {
-        right: 30px;
+        right: 50px;
+        z-index: 1;
+        transform: translateX(30px) rotate(8deg);
     }
 
     .deck-header h4 {
@@ -3397,6 +3656,11 @@ img.imagem-plan-principal {
 
     .deck-actions {
         font-size: 1.8rem;
+        gap: 12px;
+        margin: 25px 0;
+        margin-bottom: 40px;
+        justify-content: center;
+        display: flex;
     }
 
     .deck-topic {
@@ -3411,13 +3675,6 @@ img.imagem-plan-principal {
     gap: 2rem;
     margin-top: 3rem;
     position: relative;
-}
-
-.feature-card {
-    /*background: rgba(125, 101, 225, 0.1);
-    border-radius: 20px;
-    padding: 2rem;
-    backdrop-filter: blur(10px);*/
 }
 
 .feature-card.left {
@@ -3631,14 +3888,6 @@ img.imagem-plan-principal {
     border-radius: 2px;
     transition: width 0.3s ease;
 }
-
-/*teste
-.deck-actions {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 30px;
-    justify-content: center;
-}*/
 
 .action-btn {
     background: none;
@@ -4125,7 +4374,7 @@ img.imagem-plan-principal {
 }
 
 .wpforms-submit {
-    background-color: var(--primary) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     color: white !important;
     padding: 1rem 2rem !important;
     border: none !important;

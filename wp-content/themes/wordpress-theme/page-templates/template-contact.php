@@ -29,7 +29,7 @@ get_header(); ?>
                 <div class="contact-form">
                     <?php 
                     // Substitua "FORM_ID" pelo ID do seu formulário WPForms
-                    echo do_shortcode('[wpforms id="57"]'); 
+                    echo do_shortcode('[wpforms id="32"]');  /*57*/
                     ?>
                 </div>
             </div>

@@ -239,4 +239,10 @@
             font-size: 14px;
         }
     }
+
+    @media (max-width: 480px) {
+        .footer-description{
+            text-align: center;
+        }
+    }
 </style>

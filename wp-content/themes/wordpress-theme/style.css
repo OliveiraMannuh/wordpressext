@@ -813,6 +813,15 @@ footer::before{
     }
 }
 
+@media (max-width: 412px) {
+    .feature-card {
+        max-width: 300px !important; /* Limita a largura máxima dos cards */
+        margin: auto;
+        height: 500px !important; /* Ajusta a altura dos cards */
+    }
+
+}
+
 /* Seção de Preços */
 .pricing-section {
     position: relative;
@@ -1266,6 +1275,12 @@ img.imagem-plan-principal {
     }
 }
 
+@media (max-width: 412px) {
+    .planning-container{
+        gap: 1rem !important;
+    }
+}
+
 /*Imagens ao redor do círculo*/
 
 .icone-notificacao {
@@ -1656,6 +1671,10 @@ img.imagem-plan-principal {
     .main-image {
         width: 150px !important; /* Reduzindo ainda mais a largura máxima da imagem principal */
     }
+
+    .study-choice-container{
+        gap: 1rem !important; /* Reduzindo o gap entre os elementos em telas menores */
+    }
 }
 
 /* Compartilhamento */
@@ -1965,6 +1984,20 @@ img.imagem-plan-principal {
     .spaced-repetition-section {
         padding: 4rem 2rem; /* Reduzindo o padding em telas menores */
         margin-bottom: -5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .spaced-repetition-section {
+        padding: 2rem 1rem; /* Reduzindo ainda mais o padding em telas menores */
+        margin-bottom: -2rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .spaced-repetition-section {
+        padding: 1rem 0.5rem; /* Reduzindo ainda mais o padding em telas muito pequenas */
+        margin-bottom: -2rem;
     }
 }
 
@@ -2413,7 +2446,7 @@ img.imagem-plan-principal {
         position: absolute !important;
         right: 115px !important;
         width: 132px !important;
-        height: 40px !important;
+        height: 30px !important;
     }
 
     .pricing-header h2{
@@ -4228,10 +4261,6 @@ img.imagem-plan-principal {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .privacy-page {
-        margin-top: 60px;
-    }
-
     .privacy-policy-section {
         padding: 2rem 1rem;
     }

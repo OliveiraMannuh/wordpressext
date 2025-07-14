@@ -36,15 +36,16 @@
         </nav>
 
         <div class="header-buttons">
-            <a href="https://app.exituseduc.com/ " class="login-button" target="_blank" rel="noopener noreferrer">Log in</a>
+            
             <a href="https://app.exituseduc.com/ " class="trial-button" target="_blank" rel="noopener noreferrer">Login</a>
+            <a href="#jogos" class="login-button">Saiba Mais</a>
         </div>
     </header>
 
     <div class="hero-section">
         <div class="hero-content-box">
-            <h1>Exitus Educacional</h1>
-            <p>Transformando aprendizado em diversão</p>
+            <!--<h1>Exitus Educacional</h1>-->
+            <h1>Transformando aprendizado em diversão</h1>
             <p class="justificado">Domine qualquer matéria com quizzes, simulados, flashcards gamificados e acompanhamento das métricas de evolução para turbinar seu aprendizado, tudo com a vibe de um jogo! 🎮</p>
             <a href="https://app.exituseduc.com/ " class="button" target="_blank" rel="noopener noreferrer">comece a jogar!</a>
         </div>
@@ -52,7 +53,6 @@
 
     <div class="hero-foguete">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-foguete.png" alt="Hero Foguete">
-
     </div>
 </div>
 <?php endif; ?>

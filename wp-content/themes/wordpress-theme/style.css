@@ -127,14 +127,13 @@ nav a:hover {
 .login-button {
     color: var(--primary-dark);
     background: var(--white);
-    width: 65px;
+    width: 85px;
     font-weight: 500;
     font-family: var(--font-primary);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: all 0.3s ease;
     text-decoration: none;
-    display: none;
 }
 
 .login-button:hover {
@@ -391,6 +390,30 @@ nav a:hover {
 display: none;
     }
 }
+
+@media (max-width: 412px) {
+    .hero-foguete {
+        display: none;
+    }
+}
+
+@media (max-width: 1366px) {
+    .hero-foguete img { 
+        width: 400px; /* Ajusta a largura do foguete para telas menores */
+
+    }
+
+    .hero-foguete{
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        width: 510px;
+        height: auto;
+        z-index: 2;
+        animation: float 3s ease-in-out infinite;
+    }
+}
+
 
 /* Estilos do Menu Principal Centralizado */
 .main-navigation {
@@ -2519,6 +2542,12 @@ img.imagem-plan-principal {
     }
 }
 
+@media (max-width: 1366px) {
+    .spaced-study-section{
+        margin-top: -1px;
+    }
+}
+
 .spaced-study-container h2 {
     font-size: 3rem;
     color: var(--white);
@@ -2532,8 +2561,6 @@ img.imagem-plan-principal {
     .spaced-study-container h2 {
         font-size: 2.0rem;
     }
-
-
 }
 
 .spaced-study-wrapper {
@@ -4137,6 +4164,74 @@ img.imagem-plan-principal {
     .cloud-container img {
         width: 100%;
         height: auto;
+    }
+}
+
+@media (max-width:1366px){
+    .side-icons{
+        right: 40px;
+    }
+
+    .feature-card.right{
+        max-width: 350px;
+        padding: 1.2rem;
+        height: 310px !important;
+        left: 80px;
+    }
+
+    .feature-card.right h3{
+        font-size: 1.2rem;
+    }
+
+    .feature-card.right p{
+        font-size: 0.9rem;
+    }
+
+    .astronaut-container{
+        width: 600px;
+        bottom: 110px;
+    }
+
+    .feature-card.right p.segunda-frase{
+        padding-right: 0px;
+    }
+
+    .card-decks{
+        transform: scale(0.9);
+        padding: 1rem;
+        margin-right: -200px;
+        height: 350px;
+        bottom: 30px;
+    }
+
+    .deck-header h4{
+        font-size: 1.5rem;
+    }
+
+    .deck-topic{
+        font-size: 1.2rem;
+    }
+
+    .action-btn{
+        font-size: 2.5rem;
+    }
+
+    .deck-actions{
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        margin: 50px 0;
+    }
+
+    .cloud-container{
+        top: 800px;
+        left: 760px;
+        width: 50%;
+        height: 100%;
+        z-index: 10;
+    }
+
+    .how-it-works-section{
+        margin-bottom: -1px;
     }
 }
 

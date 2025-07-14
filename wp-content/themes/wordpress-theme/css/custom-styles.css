@@ -1,6 +1,6 @@
 #nextSection {
     position: fixed;
-    bottom: 20px; /* Reduzindo a distância do bottom */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%) translateY(0);
     background-color: #ffffff;
@@ -45,13 +45,12 @@
 /* Animação de pulse para o ícone */
 @keyframes pulse {
     0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
+        transform: scale(0.8);
+        opacity: 1;
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.5);
+        opacity: 0;
     }
 }
 
@@ -59,6 +58,7 @@
     font-size: 24px;
     width: 24px;
     height: 24px;
-    color: #333333;
+    color: #7D65E1; /*#FFFFFF;*/
     animation: pulse 2s infinite ease-in-out;
+    z-index: 1001; /* Garantindo que o ícone fique acima do botão */
 }

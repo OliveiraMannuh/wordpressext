@@ -183,7 +183,7 @@
             <div class="feature-card right">
                 <div class="card-content">
                     <h3>Seu conhecimento em cards, sua vitória nos estudos!</h3>
-                    <p>Monte Decks de estudo com facilidade: são como baralhos de cartas, as perguntas e respostas que você precisa.</p>
+                    <p>Monte Decks de estudo com facilidade: eles são como baralhos de cartas, com as perguntas e respostas que você precisa.</p>
                     <p class="segunda-frase">Organize seus Decks por matéria e acesse tudo num piscar de olhos. Pronto? Agora escolha como quer aprender: teste seus limites com Simulados, veja o que sabe com Quizzes rápidos ou revise com Flashcards espertos. Aprender e jogar, tudo junto!</p>
                 </div>
             </div>
